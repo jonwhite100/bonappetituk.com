@@ -1,5 +1,5 @@
 // Use this file to overwrite the basic Bootstrap variables and add your own variables
-// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
 // As example you find one of the most important Bootstrap variable below: $brand-primary.
 // Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
@@ -9,6 +9,63 @@
 //
 // Color system
 //
+$secondary: #4A9BD3; //logo light blue. original theme #4ac4f3
+$primary: #126AB4; // logo darker blue
+$white: #fff !default;
+$black: #000 !default;
+$grey: #767676;
+$grey-light: #9e9e9e !default;
+$grey-lightest: #edf5ff;
 
-$primary: #7C008C;
+$brand-danger:          #e22626 !default;
 
+// non-site variables
+$c_twitter: #00b6f1 !default;
+$c_pinterest: #bd081c;
+$c_facebook: #3b5998;
+$c_g_plus: #df4a32;
+$c_vimeo: #1ab7ea;
+$c_instagram: #cd486b;
+
+// buttons
+$border-radius-lg: 3rem !default;
+
+// font font-family
+$font-size-base: 1rem !default;
+
+$font-family-sans-serif:      'Open Sans', sans-serif !default;
+$headings-font-family:        'Poppins', sans-serif !default;
+$headings-font-weight: 600 !default;
+
+$h1-font-size:                $font-size-base * 2.25 !default;
+$h2-font-size:                $font-size-base * 1.75 !default;
+$h3-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.1 !default;
+$h5-font-size:                $font-size-base * 1.1 !default;
+$h6-font-size:                $font-size-base !default;
+
+// jumbotron
+$jumbotron-bg: lighten($secondary, 35%) !default;
+
+// navbar
+$c_navbar_bg: $white;
+$c_navbar_border: darken($white, 50%);
+
+// Shodows
+$box-shadow: 0 0 6px darken($white, 25%) !default;
+
+// Spacers
+$unit: 1.5rem;
+
+$s_md: $unit;
+$s_sm: $s_md * 0.75;
+$s_xs: $s_sm * 0.75;
+$s_lg: $s_md * 1.5;
+$s_xl: $s_lg * 1.5;
+
+// Card
+$card-spacer-y: 0.5rem !default; // 8px
+
+// List group
+$c_list_group_item_icon: $secondary !default;
+$c_list_group_item_icon_cross: $brand-danger !default;

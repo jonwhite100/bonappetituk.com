@@ -1,0 +1,55 @@
+/**
+* This is for the display posts plugin. Classes have been added to the plugin
+* So be careful when updating the plugin! Added card and card-blog-post to the $class array ('listing-item')
+* added card-img-top to image class.
+**/
+
+.listing-item {
+    .wp-post-image {
+        width: 100%!important;
+        height: auto!important;
+    }
+
+    a.card-title {
+        margin-bottom: $s_sm;
+        padding-top: $s_md;
+        padding-right: $s_md;
+        padding-left: $s_md;
+        font-size: $h4-font-size;
+        font-weight: 600;
+        color: gray('900');
+        text-transform: capitalize;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .excerpt-dash {
+        display: none;
+    }
+
+    .card-text {
+        padding-right: $s_md;
+        padding-bottom: $s_md;
+        padding-left: $s_md;
+        font-size: $font-size-base * 0.9;
+        line-height: $font-size-base * 1.8;
+    }
+
+    .btn {
+        margin-top: $s_md;
+    }
+
+    @include media-breakpoint-up(sm) {
+
+    }
+
+    /*
+    @include media-breakpoint-up(xs) { ... }
+    @include media-breakpoint-up(sm) { ... }
+    @include media-breakpoint-up(md) { ... }
+    @include media-breakpoint-up(lg) { ... }
+    @include media-breakpoint-up(xl) { ... }
+    */
+}

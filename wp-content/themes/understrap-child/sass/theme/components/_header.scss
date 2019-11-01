@@ -1,0 +1,67 @@
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/preloader.gif) center no-repeat #fff;
+}
+
+// hide title on home homepage
+.page-id-9 {
+	.entry-header {
+		display: none;
+	}
+}
+
+// temp logo sizing
+.custom-logo-link {
+	img {
+		max-width: 200px;
+	}
+}
+
+// Navbar shrinking
+.navbar {
+    padding: 1rem;
+    background-color: $c_navbar_bg;
+    // border-bottom: 1px solid $c_navbar_border;
+	box-shadow: 0px 3px 6px 0px rgba(122,120,122,0.33);
+
+    // Shrink the header
+	&.shrink {
+		top: 0!important;
+		height:70px!important;
+		padding: 0.5rem 1rem!important;
+		background-color: rgba(250, 250, 250, 1)!important;
+		transition: all 0.33s ease-in-out;
+
+		.mob-standard-logo {
+		  height: 70px !important;
+		  transition: all 0.33s ease-in-out;
+		}
+	}
+}
+
+.navbar-expand-md {
+    .navbar-nav {
+        .nav-link {
+            padding-right: $s_sm;
+            padding-left: $s_sm;
+
+            @include media-breakpoint-up(md) {
+
+            }
+        }
+    }
+}
+
+// Leave space at the top of the page for the fixed navbar
+#page {
+    margin-top: $s_lg;
+}

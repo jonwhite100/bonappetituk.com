@@ -1,0 +1,62 @@
+@import "bootstrap/buttons";
+@import "bootstrap/card";
+@import "bootstrap/jumbotron";
+@import "bootstrap/list-group";
+
+@import "components/about"; // Sassify!!
+@import "components/blog";
+@import "components/campaign-monitor";
+@import "components/companies"; // Sasify!!
+@import "components/contact"; // Still some sass to do
+@import "components/display-posts";
+@import "components/flaticon";
+@import "components/footer";
+@import "components/header";
+// @import "components/multi-screen-carousel";
+@import "components/pricing";
+@import "components/section";
+
+
+// fonts / text
+.text-center {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: $font-size-sm;
+    line-height: 1.8;
+}
+
+.section-heading {
+    margin-bottom: $s_xl;
+    display: inline-block;
+    font-weight: 700;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+
+// .container-fluid {
+//     max-width: 1440px;
+// }
+
+.homepage__block {
+    background-color: #ccc;
+    min-height: 400px;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/preloader.gif) center no-repeat #fff;
+}

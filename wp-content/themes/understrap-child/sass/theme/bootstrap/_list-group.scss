@@ -1,0 +1,76 @@
+//
+// Override BS4
+//
+
+// list-group-about is non BS4 class
+.list-group-about,
+.list-group-blog-site {
+    .list-group-item {
+        margin-bottom: $s_xs;
+        padding: 0;
+        color: gray('900');
+        font-weight: 400;
+        text-transform: capitalize;
+        border: 0;
+    }
+
+    i {
+        position: relative;
+        z-index: 1;
+        height: $s_md * 0.9;
+        width: $s_md * 0.9;
+        margin-right: $s_sm;
+        border-radius: 50%;
+        background: $primary none repeat scroll 0 0;
+        color: $white;
+        font-size: $font-size-base * 0.75;
+        line-height: $s_md;
+        text-align: center;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            content: "";
+            margin-left: -0.25rem;
+            margin-top: -0.25rem;
+            height: $s_md * 1.225;
+            width: $s_md * 1.225;
+            opacity: 0.5;
+            background: $primary none repeat scroll 0 0;
+            border-radius: 50%;
+
+        }
+    }
+}
+
+.list-group-blog-site {
+    .list-group-item {
+        text-transform: none;
+    }
+}
+
+// list-group-pricing is non BS4 class
+.list-group-pricing {
+    margin-bottom: 2rem;
+
+    .list-group-item {
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        border: 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        i {
+            margin-right: $s_xs / 2;
+            color: $c_list_group_item_icon;
+
+            &.fa-times {
+                color: $c_list_group_item_icon_cross; //#e22626
+            }
+        }
+    }
+}
