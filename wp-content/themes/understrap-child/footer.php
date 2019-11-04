@@ -25,8 +25,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div><!-- .site-info -->
 			</div>
 
-			<div class="col-md-6 footer-menu">
-				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
+			<div class="col-md-6">
+				<?php // wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
+				<?php
+				 	$args = array(
+						'menu_class' => 'footer-menu list-unstyled'
+					);
+					wp_nav_menu( $args );
+				?>
 			</div>
 
 		</div><!-- row end -->
@@ -36,7 +42,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
-
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+<script>
+	ScrollReveal().reveal('.section-about', { delay: 3500 });
+	ScrollReveal().reveal('.footer-widget', { delay: 500 });
+</script>
 </body>
 
 </html>

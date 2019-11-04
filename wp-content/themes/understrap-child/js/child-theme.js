@@ -7053,6 +7053,8 @@ console.log('Put custom JS in this file: understrap-child/src/js/custom-javascri
 jQuery(window).load(function() {
 	// Animate loader off screen
 	jQuery(".se-pre-con").fadeOut("slow");
+	// Stop carousel from autoplaying
+	jQuery('.carousel').carousel('pause');
 });
 
 jQuery(document).ready(function($) {
@@ -7066,7 +7068,6 @@ jQuery(document).ready(function($) {
 			$('.navbar').removeClass('shrink');
 		}
 	});
-
 
     // script to scroll to each section by id using https://github.com/cferdinandi/smooth-scroll
     var scroll = new SmoothScroll('a[href*="#"]');

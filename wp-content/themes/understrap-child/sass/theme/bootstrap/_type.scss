@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'kunstler_scriptregular';
+    src: url('#{$understrap-font-path}/kunstler-webfont.eot');
+    src: url('#{$understrap-font-path}/kunstler-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$understrap-font-path}/kunstler-webfont.woff') format('woff'),
+         url('#{$understrap-font-path}/kunstler-webfont.ttf') format('truetype'),
+         url('#{$understrap-font-path}/kunstler-webfont.svg#kunstler_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    // text-transform: uppercase;
+}
+
+p {
+    font-size: $font-size-sm;
+    line-height: 1.8;
+}
+
+.navbar-brand {
+    font-family: $bonappetit-font-family;
+    font-size: $h1-font-size * 2;
+    font-weight: bold;
+    line-height: 1;
+    transition: font-size 0.25s;
+
+    .shrink & {
+        font-size: $h1-font-size * 1.5;
+        transition: font-size 0.25s;
+    }
+
+    &-sub {
+        font-family: $font-family-sans-serif;
+        font-size: $font-size-base;
+        text-align: center;
+
+        .shrink & {
+            font-size: $font-size-base * 0.75;
+            transition: font-size 0.25s;
+        }
+    }
+}
+
+
+.section-heading {
+    margin-bottom: $s_xl;
+    display: inline-block;
+    font-weight: 700;
+    padding-bottom: 20px;
+    position: relative;
+}

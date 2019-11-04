@@ -9,8 +9,9 @@
 //
 // Color system
 //
-$secondary: #4A9BD3; //logo light blue. original theme #4ac4f3
-$primary: #126AB4; // logo darker blue
+$primary: #04678f; // logo darker blue
+$secondary: #126972; //logo light blue. original theme #4ac4f3
+
 $white: #fff !default;
 $black: #000 !default;
 $grey: #767676;
@@ -30,12 +31,18 @@ $c_instagram: #cd486b;
 // buttons
 $border-radius-lg: 3rem !default;
 
+// carousel
+$carousel-control-color: $primary !default;
+$carousel-indicator-active-bg: $primary !default;
+
 // font font-family
 $font-size-base: 1rem !default;
 
-$font-family-sans-serif:      'Open Sans', sans-serif !default;
+$font-family-sans-serif: 'Open Sans', sans-serif !default;
 $headings-font-family:        'Poppins', sans-serif !default;
+$bonappetit-font-family: 'kunstler_scriptregular', serif !default;
 $headings-font-weight: 600 !default;
+$understrap-font-path:        "../fonts" !default;
 
 $h1-font-size:                $font-size-base * 2.25 !default;
 $h2-font-size:                $font-size-base * 1.75 !default;
@@ -45,7 +52,8 @@ $h5-font-size:                $font-size-base * 1.1 !default;
 $h6-font-size:                $font-size-base !default;
 
 // jumbotron
-$jumbotron-bg: lighten($secondary, 35%) !default;
+$jumbotron-bg: transparent !default;
+$jumbotron-padding: 0 !default;
 
 // navbar
 $c_navbar_bg: $white;

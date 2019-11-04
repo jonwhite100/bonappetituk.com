@@ -3,7 +3,7 @@
     position: relative;
     padding-top: $s_xl;
     padding-bottom: $s_xl * 2;
-    
+
 }
 
 .section-newsletter,
@@ -17,6 +17,10 @@
 .section-scroll-to {
     display: flex;
     margin-top: $s_lg;
+}
+
+.section-testimonials {
+    padding-bottom: $s_xl * 1;
 }
 
 /// 1. pust the dark overlay over the bg image
