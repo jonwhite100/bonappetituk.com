@@ -43,10 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php wp_footer(); ?>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-<script>
-	ScrollReveal().reveal('.section-about', { delay: 3500 });
-	ScrollReveal().reveal('.footer-widget', { delay: 500 });
-</script>
+
 </body>
 
 </html>

@@ -65,11 +65,11 @@ $box-shadow: 0 0 6px darken($white, 25%) !default;
 // Spacers
 $unit: 1.5rem;
 
-$s_md: $unit;
-$s_sm: $s_md * 0.75;
+$s-md: $unit;
+$s_sm: $s-md * 0.75;
 $s_xs: $s_sm * 0.75;
-$s_lg: $s_md * 1.5;
-$s_xl: $s_lg * 1.5;
+$s-lg: $s-md * 1.5;
+$s-xl: $s-lg * 1.5;
 
 // Card
 $card-spacer-y: 0.5rem !default; // 8px

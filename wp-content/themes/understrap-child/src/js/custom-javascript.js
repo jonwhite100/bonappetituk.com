@@ -6,7 +6,7 @@ jQuery(window).load(function() {
 	// Animate loader off screen
 	jQuery(".se-pre-con").fadeOut("slow");
 	// Stop carousel from autoplaying
-	jQuery('.carousel').carousel('pause');
+	jQuery('#carousel-testimonials.carousel').carousel('pause');
 });
 
 jQuery(document).ready(function($) {
@@ -24,6 +24,10 @@ jQuery(document).ready(function($) {
     // script to scroll to each section by id using https://github.com/cferdinandi/smooth-scroll
     var scroll = new SmoothScroll('a[href*="#"]');
 
+	// delay showing content until scrolled into view
+	ScrollReveal().reveal('.section-about', { delay: 500 });
+	ScrollReveal().reveal('.footer-widget', { delay: 500 });
+
     // $(document).on('click', 'a[href*="#"]:not([href="#"])', function(e) {
     //     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
     //         var hashStr = this.hash.slice(1);
@@ -38,28 +42,26 @@ jQuery(document).ready(function($) {
     //     }
     // });
 
-    // script for multi slides per BS carousel
-    // $('#carouselExample').on('slide.bs.carousel', function (e) {
-    //     /*
-    //     CC 2.0 License Iatek LLC 2018
-    //     Attribution required
-    //     */
-    //     var $e = $(e.relatedTarget);
-    //     var idx = $e.index();
-    //     var itemsPerSlide = 3;
-    //     var totalItems = $('.carousel-item').length;
-    //
-    //     if (idx >= totalItems-(itemsPerSlide-1)) {
-    //         var it = itemsPerSlide - (totalItems - idx);
-    //         for (var i=0; i<it; i++) {
-    //             // append slides to end
-    //             if (e.direction=="left") {
-    //                 $('.carousel-item').eq(i).appendTo('.carousel-inner');
-    //             }
-    //             else {
-    //                 $('.carousel-item').eq(0).appendTo('.carousel-inner');
-    //             }
-    //         }
-    //     }
-    // });
+    // script for multi slides per BS carousel. From https://www.codeply.com/go/3EQkUOhhZz
+	$('#carousel-films').carousel({
+		interval: 6000
+	})
+
+	$('.carousel-multi-item .carousel-item').each(function(){
+		var next = $(this).next();
+		if (!next.length) {
+			next = $(this).siblings(':first');
+		}
+		next.children(':first-child').clone().appendTo($(this));
+
+		for (var i=0;i<2;i++) {
+			next=next.next();
+			if (!next.length) {
+				next = $(this).siblings(':first');
+			}
+
+			next.children(':first-child').clone().appendTo($(this));
+		}
+	});
+
 });

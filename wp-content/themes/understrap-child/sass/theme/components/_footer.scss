@@ -2,45 +2,45 @@
 #wrapper-footer,
 #wrapper-footer-full,
 #wrapper-static-hero {
-    background-color: $primary;
-    color: $white;
-    font-size: $font-size-base * 0.85;
+  background-color: $primary;
+  color: $white;
+  font-size: $font-size-base * .85;
 
-    a {
-        color: $white;
-    }
+  a {
+    color: $white;
+  }
 }
 
 #wrapper-footer {
-    background-color: $black;
+  background-color: $black;
 }
 
 .site-info {
-    color: $white;
+  color: $white;
 }
 
 .footer-widget {
-    h3 {
-        font-size: $h4-font-size;
-        margin-bottom: $s_md;
-    }
+  h3 {
+    margin-bottom: $s-md;
+    font-size: $h4-font-size;
+  }
 }
 
 .contact-info {
-    li {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: $s_xs;
-    }
+  li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: $s_xs;
+  }
 
     .icon {
         .fas {
-            height: $s_lg;
-            width: $s_lg;
+            height: $s-lg;
+            width: $s-lg;
             border-radius: 50%;
             color: $primary;
             font-size: $h4-font-size;
-            line-height: $s_lg;
+            line-height: $s-lg;
             text-align: center;
             background: $grey-lightest none repeat scroll 0 0;
         }
@@ -60,6 +60,7 @@
 
 .footer-menu {
     text-align: right;
+
     li {
         display: inline-block;
         margin-left: 1rem;
@@ -86,7 +87,7 @@
 
         img {
             max-width: 150px;
-            margin-bottom: $s_md;
+            margin-bottom: $s-md;
         }
     }
 
@@ -97,7 +98,7 @@
         }
 
         li {
-            margin-bottom: $s_md;
+            margin-bottom: $s-md;
         }
 
         a {

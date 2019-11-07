@@ -14,7 +14,12 @@
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     // text-transform: uppercase;
 }
 
@@ -28,11 +33,11 @@ p {
     font-size: $h1-font-size * 2;
     font-weight: bold;
     line-height: 1;
-    transition: font-size 0.25s;
+    transition: font-size .25s;
 
     .shrink & {
         font-size: $h1-font-size * 1.5;
-        transition: font-size 0.25s;
+        transition: font-size .25s;
     }
 
     &-sub {
@@ -41,17 +46,32 @@ p {
         text-align: center;
 
         .shrink & {
-            font-size: $font-size-base * 0.75;
-            transition: font-size 0.25s;
+            font-size: $font-size-base * .75;
+            transition: font-size .25s;
         }
     }
 }
 
-
 .section-heading {
-    margin-bottom: $s_xl;
-    display: inline-block;
+	display: inline-block;
+    margin-bottom: $s-xl;
+	padding-bottom: 2rem;
+	position: relative;
     font-weight: 700;
-    padding-bottom: 20px;
-    position: relative;
+}
+
+///
+// the bar header that contains the page title
+///
+.entry-header {
+	width: 100%;
+	padding-top: $s-lg;
+	padding-bottom: $s-lg;
+	background-color: $primary;
+
+    .entry-title,
+    .entry-meta {
+        text-align: center;
+        color: $white;
+    }
 }

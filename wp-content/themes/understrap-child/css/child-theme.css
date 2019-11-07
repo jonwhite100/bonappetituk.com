@@ -14854,8 +14854,8 @@ a.skip-link {
 .jumbotron {
   padding-top: 2.25rem;
   border-radius: 0;
-  background-image: url("/bonappetituk.com/wp-content/uploads/2019/11/istockphoto-1147130250-2048x2048.jpg"); }
-  .jumbotron [class*="col-"] {
+  background-image: url("/bonappetituk.com/wp-content/uploads/2019/11/home-example.jpg"); }
+  .jumbotron [class*='col-'] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -14866,7 +14866,8 @@ a.skip-link {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .jumbotron h1, .jumbotron h2 {
+  .jumbotron h1,
+  .jumbotron h2 {
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -14889,10 +14890,10 @@ a.skip-link {
   padding-bottom: 3.375rem; }
 
 .jumbotron-base-curve {
+  display: block;
   margin-bottom: 0;
   padding-bottom: 0;
-  position: relative;
-  display: block; }
+  position: relative; }
   .jumbotron-base-curve path {
     fill: #fff; }
 
@@ -14969,27 +14970,37 @@ p {
   font-size: 4.5rem;
   font-weight: bold;
   line-height: 1;
-  -webkit-transition: font-size 0.25s;
-  transition: font-size 0.25s; }
+  -webkit-transition: font-size .25s;
+  transition: font-size .25s; }
   .shrink .navbar-brand {
     font-size: 3.375rem;
-    -webkit-transition: font-size 0.25s;
-    transition: font-size 0.25s; }
+    -webkit-transition: font-size .25s;
+    transition: font-size .25s; }
   .navbar-brand-sub {
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     text-align: center; }
     .shrink .navbar-brand-sub {
       font-size: 0.75rem;
-      -webkit-transition: font-size 0.25s;
-      transition: font-size 0.25s; }
+      -webkit-transition: font-size .25s;
+      transition: font-size .25s; }
 
 .section-heading {
-  margin-bottom: 3.375rem;
   display: inline-block;
-  font-weight: 700;
-  padding-bottom: 20px;
-  position: relative; }
+  margin-bottom: 3.375rem;
+  padding-bottom: 2rem;
+  position: relative;
+  font-weight: 700; }
+
+.entry-header {
+  width: 100%;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  background-color: #04678f; }
+  .entry-header .entry-title,
+  .entry-header .entry-meta {
+    text-align: center;
+    color: #fff; }
 
 /*
 
@@ -15162,57 +15173,6 @@ p {
   line-height: 1.5;
   color: #495057;
   border-radius: 0.25rem; }
-
-.companies-area {
-  background-color: #33c0f9; }
-
-.companies-area .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  vertical-align: middle; }
-
-.companies-area .clients-items img {
-  width: auto;
-  margin: auto;
-  padding: 5px; }
-
-.companies-area .clients-items .owl-nav {
-  margin: 0; }
-
-.companies-area .clients-items .owl-nav .owl-prev,
-.companies-area .clients-items .owl-nav .owl-next {
-  background: transparent none repeat scroll 0 0;
-  color: #04678f;
-  font-size: 30px;
-  height: 35px;
-  left: 0;
-  line-height: 35px;
-  margin-top: -18px;
-  padding: 0;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 35px; }
-
-.companies-area .clients-items .owl-nav .owl-next {
-  left: auto;
-  right: 0; }
-
-.companies-area .info h4 {
-  font-weight: 600;
-  text-transform: capitalize; }
-
-.companies-area .info p {
-  margin: 0; }
 
 .section-work-with-us li {
   display: -webkit-box;
@@ -15445,8 +15405,8 @@ p {
 #wrapper-footer-full,
 #wrapper-static-hero {
   background-color: #04678f;
-  font-size: 0.85rem;
-  color: #fff; }
+  color: #fff;
+  font-size: 0.85rem; }
   #wrapper-footer a,
   #wrapper-footer-full a,
   #wrapper-static-hero a {
@@ -15516,7 +15476,7 @@ p {
 
         img {
             max-width: 150px;
-            margin-bottom: $s_md;
+            margin-bottom: $s-md;
         }
     }
 
@@ -15527,7 +15487,7 @@ p {
         }
 
         li {
-            margin-bottom: $s_md;
+            margin-bottom: $s-md;
         }
 
         a {
@@ -15590,25 +15550,23 @@ p {
 }
 
 */
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, if it's not present, don't show loader */
 .no-js #loader {
   display: none; }
 
 .js #loader {
   display: block;
   position: absolute;
-  left: 100px;
-  top: 0; }
+  top: 0;
+  left: 100px; }
 
 .se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
   width: 100%;
   height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 9999;
-  background: url(images/preloader.gif) center no-repeat #fff; }
+  background: url("images/preloader.gif") center no-repeat #fff; }
 
 .page-id-9 .entry-header {
   display: none; }
@@ -15619,8 +15577,8 @@ p {
 .navbar {
   padding: 1rem;
   background-color: #fff;
-  -webkit-box-shadow: 0px 3px 6px 0px rgba(122, 120, 122, 0.33);
-          box-shadow: 0px 3px 6px 0px rgba(122, 120, 122, 0.33); }
+  -webkit-box-shadow: 0 3px 6px 0 rgba(122, 120, 122, 0.33);
+          box-shadow: 0 3px 6px 0 rgba(122, 120, 122, 0.33); }
   .navbar.shrink {
     top: 0 !important;
     height: 70px !important;
@@ -15638,7 +15596,32 @@ p {
   padding-left: 1.125rem; }
 
 #page {
-  margin-top: 2.25rem; }
+  margin-top: 13.5rem; }
+
+.carousel-multi-item .carousel-item.active, .carousel-multi-item .carousel-item-next, .carousel-multi-item .carousel-item-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.carousel-multi-item .carousel-item-left, .carousel-multi-item .carousel-item-right {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+.carousel-multi-item .carousel-item-next {
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%); }
+
+.carousel-multi-item .carousel-item-prev {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%); }
+
+.carousel-multi-item .carousel-item-right .active {
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%); }
+
+.carousel-multi-item .carousel-item-left .active {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%); }
 
 /*
 .pricing {
@@ -15754,9 +15737,8 @@ p {
     background: #000 none repeat scroll 0 0;
     opacity: 0.5; }
 
-.homepage__block {
-  background-color: #ccc;
-  min-height: 400px; }
+.home .entry-title {
+  display: none; }
 
 .no-js #loader {
   display: none; }
@@ -15764,16 +15746,16 @@ p {
 .js #loader {
   display: block;
   position: absolute;
-  left: 100px;
-  top: 0; }
+  top: 0;
+  left: 100px; }
 
 .se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
   z-index: 9999;
-  background: url(../images/preloader.gif) center no-repeat #fff; }
+  background: url("../images/preloader.gif") center no-repeat #fff; }
 
 /*# sourceMappingURL=child-theme.css.map */

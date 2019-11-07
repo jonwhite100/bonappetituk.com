@@ -9,7 +9,7 @@
 //
 .card {
     .card-deck & {
-        margin-bottom: $s_md;
+        margin-bottom: $s-md;
     }
 }
 
@@ -18,7 +18,7 @@
 
     hr {
         margin-top: $s_xs;
-        margin-bottom: $s_md;
+        margin-bottom: $s-md;
     }
 }
 
@@ -29,7 +29,7 @@
 .card-pricing {
     position: relative;
     overflow: hidden;
-    margin-bottom: $s_lg;
+    margin-bottom: $s-lg;
     background-color: $white;
     border-width: 1px;
     border-radius: 0.3rem;
@@ -146,7 +146,7 @@
 }
 
 .card-body-heading {
-    margin-bottom: $s_md;
+    margin-bottom: $s-md;
 }
 
 /// 1. the paragraph already has 1rem margin bottom (added together = 2rem)

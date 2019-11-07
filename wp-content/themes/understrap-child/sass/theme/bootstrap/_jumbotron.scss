@@ -3,17 +3,18 @@
 //
 
 .jumbotron {
-    padding-top: $s_lg;
+    padding-top: $s-lg;
     border-radius: 0;
-    background-image: url('/bonappetituk.com/wp-content/uploads/2019/11/istockphoto-1147130250-2048x2048.jpg');
+    background-image: url('/bonappetituk.com/wp-content/uploads/2019/11/home-example.jpg');
 
-    [class*="col-"] {
+    [class*='col-'] {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    h1, h2 {
+    h1,
+	h2 {
         font-family: $font-family-sans-serif;
         text-transform: uppercase;
         text-align: center;
@@ -21,13 +22,13 @@
     }
 
     h1 {
-        margin-top: $s_xl;
-        margin-bottom: $s_lg;
+        margin-top: $s-xl;
+        margin-bottom: $s-lg;
         font-size: $h1-font-size * 2;
     }
 
     h2 {
-        margin-bottom: $s_md;
+        margin-bottom: $s-md;
         font-size: 2.5rem;
     }
 
@@ -42,18 +43,18 @@
 
 .jumbotron-main {
     min-height: 30rem;
-    padding-top: $s_xl;
-    padding-bottom: $s_xl;
+    padding-top: $s-xl;
+    padding-bottom: $s-xl;
 }
 
 .jumbotron-base {
     // background-color: $jumbotron-bg;
 
     &-curve {
-        margin-bottom:0;
-        padding-bottom:0;
-        position:relative;
-        display:block;
+		display: block;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        position: relative;
 
         path {
             fill: $white;

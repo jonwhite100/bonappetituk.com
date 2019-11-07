@@ -13,8 +13,8 @@
 
     .entry-header {
         width: 100%;
-        padding-top: $s_lg;
-        padding-bottom: $s_lg;
+        padding-top: $s-lg;
+        padding-bottom: $s-lg;
         background-color: $primary;
     }
 
@@ -25,7 +25,7 @@
     }
 
     .card-body {
-        padding: $s_lg;
+        padding: $s-lg;
     }
 
     .wp-post-image {
