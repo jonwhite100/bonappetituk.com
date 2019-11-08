@@ -48,6 +48,14 @@
 		  transition: all .33s ease-in-out;
 		}
 	}
+
+	@include media-breakpoint-down(xs) {
+		height: 115px;
+
+		&.shrink {
+			height: 115px;
+		}
+	}
 }
 
 .navbar-expand-md {
@@ -59,10 +67,17 @@
     }
 }
 
-// Leave space at the top of the page for the fixed navbar
-#page {
-    margin-top: $s-md;
-	// @include media-breakpoint-up(md) {}
+// Leave space at the top of the page for the fixed navbar.
+.site {
+    margin-top: $s-lg;
+
+	@include media-breakpoint-up(md) {
+		margin-top: $s-xl;
+	}
+
+	@include media-breakpoint-up(lg) {
+		margin-top: $s-xl + $s-xs;
+	}
 }
 
 // hide page title on home page

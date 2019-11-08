@@ -6,13 +6,13 @@
     li {
         display: flex;
         align-items: flex-start;
-        margin-bottom: $s_xs;
+        margin-bottom: $s-xs;
         font-size: $font-size-base * 0.8;
         line-height: 1.8;
     }
 
     .fas {
-        margin-right: $s_xs;
+        margin-right: $s-xs;
         border-radius: 50%;
         color: $primary;
         font-size: $h4-font-size;
@@ -34,27 +34,27 @@
     }
 
     .twitter a {
-        background-color: $c_twitter;
+        background-color: $c-twitter;
     }
 
     .pinterest a {
-        background-color: $c_pinterest;
+        background-color: $c-pinterest;
     }
 
     .facebook a {
-        background-color: $c_facebook;
+        background-color: $c-facebook;
     }
 
     .g-plus a {
-        background-color: $c_g_plus;
+        background-color: $c-g-plus;
     }
 
     .vimeo a {
-        background-color: $c_vimeo;
+        background-color: $c-vimeo;
     }
 
     .instagram a {
-        background-color: $c_instagram;
+        background-color: $c-instagram;
     }
 
 }
@@ -117,7 +117,7 @@
 
     button {
         i {
-            padding-left: $s_xs;
+            padding-left: $s-xs;
         }
     }
 }

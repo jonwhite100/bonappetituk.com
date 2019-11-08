@@ -1,169 +1,28 @@
 //
 // Override BS4
 //
-
 .btn {
-    // @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius-lg);
-    border-radius: $btn-border-radius-lg;
-}
+	// @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius-lg);
+	border-radius: $btn-border-radius-lg;
 
-.btn {
-    .card-pricing & {
+	.card-pricing & {
+		padding: $s-sm $s-md;
+		font-size: $font-size-base * .75;
+		font-weight: bold;
         text-transform: uppercase;
-        font-size: $font-size-base * 0.75;
-        font-weight: bold;
-        padding: $s-sm $s-md;
     }
 }
 
-// .btn {
-//     padding: 10px 40px;
-//     font-weight: 600;
-//
-//     &.circle {
-//         border-radius: 3rem;
-//     }
-//
-//     &-primary {
-//         color: $white;
-//         font-size: $font-size-sm;
-//         text-transform: uppercase;
-//     }
-//
-//     &-sm {
-//         padding: 10px 40px;
-//         font-size: $font-size-base * 0.8;
-//     }
-// }
-
-
-/**
-* Pulsing button
-**/
-@keyframes pulse {to {box-shadow: 0 0 0 1.5rem rgba(232, 76, 61, 0);}}
+///
+// Pulsing button
+///
+@keyframes pulse {to {box-shadow: 0 0 0 1.5rem $c-btn-pulsing-box-shadow;}}
 
 .btn-pulse {
     box-shadow: 0 0 0 0 $secondary;
-    animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 2s infinite cubic-bezier(.66, 0, 0, 1);
 
     &::hover {
         animation: none;
     }
 }
-// @keyframes pulse-border {
-//     0% {
-//         -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-//         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-//         opacity: 1;
-//     }
-//
-//     100% {
-//         -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-//         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-//         opacity: 0;
-//     }
-// }
-//
-// .btn-pulse {
-//     transform: translateX(-50%) translateY(-50%);
-// }
-//
-// .video-play-button {
-//   -webkit-border-radius: 50%;
-//   -moz-border-radius: 50%;
-//   border-radius: 50%;
-//   box-sizing: content-box;
-//   color: #ffffff;
-//   display: block;
-//   font-size: 40px;
-//   height: 40px;
-//   left: 50%;
-//   line-height: 40px;
-//   margin-top: 25px;
-//   padding: 0 0 0 10px;
-//   position: absolute;
-//   top: 50%;
-//   -webkit-transform: translateX(-50%) translateY(-50%);
-//   width: 40px;
-//   z-index: 10;
-// }
-//
-// .text-dark .video-play-button {
-//   color: #4ac4f3;
-// }
-//
-// .video-play-button:before {
-//   content: "";
-//   position: absolute;
-//   z-index: 0;
-//   left: 50%;
-//   top: 50%;
-//   -webkit-transform: translateX(-50%) translateY(-50%);
-//   transform: translateX(-50%) translateY(-50%);
-//   display: block;
-//   width: 80px;
-//   height: 80px;
-//   background: #4ac4f3 repeat scroll 0 0;
-//   -webkit-border-radius: 50%;
-//   -moz-border-radius: 50%;
-//   border-radius: 50%;
-//   -webkit-animation: pulse-border 1500ms ease-out infinite;
-//   animation: pulse-border 1500ms ease-out infinite;
-// }
-//
-// .text-dark .video-play-button:before {
-//   background: #ffffff repeat scroll 0 0;
-// }
-//
-// .video-play-button:after {
-//   content: "";
-//   position: absolute;
-//   z-index: 1;
-//   left: 50%;
-//   top: 50%;
-//   -webkit-transform: translateX(-50%) translateY(-50%);
-//   transform: translateX(-50%) translateY(-50%);
-//   display: block;
-//   width: 80px;
-//   height: 80px;
-//   background: #4ac4f3 repeat scroll 0 0;
-//   -webkit-border-radius: 50%;
-//   -moz-border-radius: 50%;
-//   border-radius: 50%;
-//   transition: all 200ms;
-//   -webkit-transition: all 200ms;
-//   -moz-transition: all 200ms;
-//   -ms-transition: all 200ms;
-//   -o-transition: all 200ms;
-// }
-//
-// .text-dark .video-play-button:after {
-//   background: #ffffff repeat scroll 0 0;
-// }
-//
-// .video-play-button:hover,
-// .video-play-button:focus {
-//   color: #ffffff;
-// }
-//
-// .text-dark .video-play-button:hover,
-// .text-dark .video-play-button:focus {
-//   color: #4ac4f3;
-//   background-color: #ffffff;
-// }
-//
-// .video-play-button:hover:after {
-//   background-color: #4ac4f3;
-// }
-//
-// .text-dark .video-play-button:hover:after {
-//   background-color: #ffffff;
-// }
-//
-//
-//
-// .video-play-button i {
-//   display: block;
-//   position: relative;
-//   z-index: 3;
-// }

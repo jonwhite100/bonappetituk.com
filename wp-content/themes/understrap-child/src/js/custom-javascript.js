@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
     var scroll = new SmoothScroll('a[href*="#"]');
 
 	// delay showing content until scrolled into view
-	ScrollReveal().reveal('.section-about', { delay: 500 });
+	ScrollReveal().reveal('.col-md-8', { delay: 500 });
 	ScrollReveal().reveal('.footer-widget', { delay: 500 });
 
     // $(document).on('click', 'a[href*="#"]:not([href="#"])', function(e) {

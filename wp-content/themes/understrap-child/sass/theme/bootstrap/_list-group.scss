@@ -6,7 +6,7 @@
 .list-group-about,
 .list-group-blog-site {
     .list-group-item {
-        margin-bottom: $s_xs;
+        margin-bottom: $s-xs;
         padding: 0;
         color: gray('900');
         font-weight: 400;
@@ -65,11 +65,11 @@
         }
 
         i {
-            margin-right: $s_xs / 2;
-            color: $c_list_group_item_icon;
+            margin-right: $s-xs / 2;
+            color: $c-list-group-item-icon;
 
             &.fa-times {
-                color: $c_list_group_item_icon_cross; //#e22626
+                color: $c-list-group-item-icon-cross; //#e22626
             }
         }
     }

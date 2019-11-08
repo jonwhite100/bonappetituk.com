@@ -50,6 +50,11 @@ p {
             transition: font-size .25s;
         }
     }
+
+	@include media-breakpoint-down(xs) {
+		font-size: $h1-font-size * 1.5;
+        transition: font-size .25s;
+	}
 }
 
 .section-heading {
