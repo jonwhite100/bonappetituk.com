@@ -21,13 +21,6 @@
 	background: url('images/preloader.gif') center no-repeat $white;
 }
 
-// hide title on home homepage
-.page-id-9 {
-	.entry-header {
-		display: none;
-	}
-}
-
 // temp logo sizing
 .custom-logo-link {
 	img {
@@ -38,21 +31,21 @@
 // Navbar shrinking
 .navbar {
     padding: 1rem;
-    background-color: $c_navbar_bg;
-    // border-bottom: 1px solid $c_navbar_border;
-	box-shadow: 0 3px 6px 0 rgba(122, 120, 122, .33);
+    background-color: $c-navbar-bg;
+    // border-bottom: 1px solid $c-navbar-border;
+	box-shadow: 0 3px 6px 0 $c-navbar-box-shadow;
 
     // Shrink the header
 	&.shrink {
-		top: 0!important;
-		height:70px!important;
-		padding: 0.5rem 1rem!important;
-		background-color: rgba(250, 250, 250, 1)!important;
-		transition: all 0.33s ease-in-out;
+		height: 70px;
+		padding: $s-xs $s-sm;
+		top: 0;
+		background-color: $c-navbar-bg-shrink;
+		transition: all .33s ease-in-out;
 
 		.mob-standard-logo {
-		  height: 70px !important;
-		  transition: all 0.33s ease-in-out;
+		  height: 70px;
+		  transition: all .33s ease-in-out;
 		}
 	}
 }
@@ -60,17 +53,21 @@
 .navbar-expand-md {
     .navbar-nav {
         .nav-link {
-            padding-right: $s_sm;
-            padding-left: $s_sm;
-
-            @include media-breakpoint-up(md) {
-
-            }
+            padding-right: $s-sm;
+            padding-left: $s-sm;
         }
     }
 }
 
 // Leave space at the top of the page for the fixed navbar
 #page {
-    margin-top: $s-xl * 4;
+    margin-top: $s-md;
+	// @include media-breakpoint-up(md) {}
+}
+
+// hide page title on home page
+.home {
+    .entry-header {
+        display: none;
+    }
 }

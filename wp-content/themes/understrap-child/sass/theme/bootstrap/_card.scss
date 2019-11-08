@@ -51,7 +51,7 @@
     }
 
     .card-blog-post & {
-        // padding: $s_sm;
+        // padding: $s-sm;
     }
 
     .card-pricing & {
@@ -128,7 +128,7 @@
     }
 
     .card-about & {
-        margin-bottom: $s_sm;
+        margin-bottom: $s-sm;
         font-size: $h2-font-size;
         text-transform: capitalize;
         color: gray('900');
@@ -136,7 +136,7 @@
     }
 
     .card-blog-post & {
-        // margin-bottom: $s_sm;
+        // margin-bottom: $s-sm;
     }
 
     .card-pricing & {

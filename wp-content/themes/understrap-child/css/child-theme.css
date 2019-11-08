@@ -15024,7 +15024,7 @@ p {
     }
 
     .col-lg-6 {
-        margin-bottom: $s_sm;
+        margin-bottom: $s-sm;
     }
 
     .item {
@@ -15032,7 +15032,7 @@ p {
             color: $primary;
             display: inline-block;
             font-size: 4rem;
-            margin-bottom: $s_sm;
+            margin-bottom: $s-sm;
             position: relative;
             z-index: 1;
             line-height: 1;
@@ -15532,7 +15532,7 @@ p {
         }
 
         .info {
-            padding-left: $s_sm;
+            padding-left: $s-sm;
         }
 
         h5 {
@@ -15568,9 +15568,6 @@ p {
   z-index: 9999;
   background: url("images/preloader.gif") center no-repeat #fff; }
 
-.page-id-9 .entry-header {
-  display: none; }
-
 .custom-logo-link img {
   max-width: 200px; }
 
@@ -15580,23 +15577,26 @@ p {
   -webkit-box-shadow: 0 3px 6px 0 rgba(122, 120, 122, 0.33);
           box-shadow: 0 3px 6px 0 rgba(122, 120, 122, 0.33); }
   .navbar.shrink {
-    top: 0 !important;
-    height: 70px !important;
-    padding: 0.5rem 1rem !important;
-    background-color: #fafafa !important;
-    -webkit-transition: all 0.33s ease-in-out;
-    transition: all 0.33s ease-in-out; }
+    height: 70px;
+    padding: 0.84375rem 1.125rem;
+    top: 0;
+    background-color: #fafafa;
+    -webkit-transition: all .33s ease-in-out;
+    transition: all .33s ease-in-out; }
     .navbar.shrink .mob-standard-logo {
-      height: 70px !important;
-      -webkit-transition: all 0.33s ease-in-out;
-      transition: all 0.33s ease-in-out; }
+      height: 70px;
+      -webkit-transition: all .33s ease-in-out;
+      transition: all .33s ease-in-out; }
 
 .navbar-expand-md .navbar-nav .nav-link {
   padding-right: 1.125rem;
   padding-left: 1.125rem; }
 
 #page {
-  margin-top: 13.5rem; }
+  margin-top: 1.5rem; }
+
+.home .entry-header {
+  display: none; }
 
 .carousel-multi-item .carousel-item.active, .carousel-multi-item .carousel-item-next, .carousel-multi-item .carousel-item-prev {
   display: -webkit-box;
@@ -15736,9 +15736,6 @@ p {
     height: 100%;
     background: #000 none repeat scroll 0 0;
     opacity: 0.5; }
-
-.home .entry-title {
-  display: none; }
 
 .no-js #loader {
   display: none; }
