@@ -22,17 +22,13 @@
     }
 }
 
-.card-post {
-
-}
-
 .card-pricing {
     position: relative;
-    overflow: hidden;
     margin-bottom: $s-lg;
-    background-color: $white;
     border-width: 1px;
-    border-radius: 0.3rem;
+	border-radius: .3rem;
+	background-color: $white;
+	overflow: hidden;
 
     @include media-breakpoint-up(lg) {
         margin-bottom: 0;
@@ -50,10 +46,6 @@
         }
     }
 
-    .card-blog-post & {
-        // padding: $s-sm;
-    }
-
     .card-pricing & {
         padding: 0;
     }
@@ -61,8 +53,8 @@
 
 .card-title-container {
     .card-pricing & {
+		border-bottom: 1px solid gray('200');
         background-color: lighten($secondary, 35%);
-        border-bottom: 1px solid gray('200');
 
         &.active {
             background-color: $primary;
@@ -76,10 +68,6 @@
         color: $primary;
     }
 
-    .card-blog-post & {
-
-    }
-
     .card-pricing & {
         color: gray('900');
 
@@ -90,19 +78,15 @@
 }
 
 .card-title {
-    .card-about & {
-
-    }
-
     .card-blog-post & {
         text-transform: capitalize;
 
         a {
             color: gray('900');
-        }
 
-        a:hover {
-            color: $primary;
+			&:hover {
+            	color: $primary;
+			}
         }
     }
 
@@ -122,21 +106,17 @@
     }
 
     sub {
+		margin-left: -5px;
         font-size: $h4-font-size;
         font-weight: 400;
-        margin-left: -5px;
     }
 
     .card-about & {
         margin-bottom: $s-sm;
+		color: gray('900');
         font-size: $h2-font-size;
-        text-transform: capitalize;
-        color: gray('900');
         line-height: 1.4;
-    }
-
-    .card-blog-post & {
-        // margin-bottom: $s-sm;
+		text-transform: capitalize;
     }
 
     .card-pricing & {
@@ -153,7 +133,7 @@
 .card-text {
     .card-pricing & {
         padding-right: 2rem;
-        padding-bottom: 0.75rem; // 1
+        padding-bottom: .75rem; // 1
         padding-left: 2rem;
     }
 }

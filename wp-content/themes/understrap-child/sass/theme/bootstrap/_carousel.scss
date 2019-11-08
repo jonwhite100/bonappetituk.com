@@ -9,18 +9,18 @@
         text-align: center;
 
         i {
-            font-size: $h1-font-size * 1.5;
             color: $primary;
+			font-size: $h1-font-size * 1.5;
         }
 
         p {
-            margin: 0 auto 1rem;
             width: 66%;
+			margin: 0 auto 1rem;
         }
 
         .position {
-            font-size: $font-size-base * 0.85;
             color: $secondary;
+			font-size: $font-size-base * .85;
         }
     }
 }

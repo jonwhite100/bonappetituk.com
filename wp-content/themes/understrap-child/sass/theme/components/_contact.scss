@@ -1,13 +1,9 @@
 .section-work-with-us {
-    ul {
-
-    }
-
     li {
         display: flex;
         align-items: flex-start;
         margin-bottom: $s-xs;
-        font-size: $font-size-base * 0.8;
+        font-size: $font-size-base * .8;
         line-height: 1.8;
     }
 
@@ -20,58 +16,57 @@
 }
 
 .social {
-    display: flex;
-    
-    a {
-        display: inline-block;
+	display: flex;
+
+	a {
+		display: inline-block;
         width: 40px;
         height: 40px;
         margin: 0 2px;
-        text-align: center;
+		border-radius: 50%;
         color: $white;
-        line-height: 40px;
-        border-radius: 50%;
+		line-height: 40px;
+		text-align: center;
     }
 
-    .twitter a {
-        background-color: $c-twitter;
-    }
+    .twitter {
+		a {
+	        background-color: $c-twitter;
+	    }
+	}
 
-    .pinterest a {
-        background-color: $c-pinterest;
-    }
+    .pinterest {
+		a {
+			background-color: $c-pinterest;
+		}
+	}
 
-    .facebook a {
-        background-color: $c-facebook;
-    }
+	.facebook {
+		a {
+	        background-color: $c-facebook;
+	    }
+	}
 
-    .g-plus a {
-        background-color: $c-g-plus;
-    }
+	.g-plus {
+		a {
+	        background-color: $c-g-plus;
+	    }
+	}
 
-    .vimeo a {
-        background-color: $c-vimeo;
-    }
+	.vimeo {
+		a {
+	        background-color: $c-vimeo;
+	    }
+	}
 
-    .instagram a {
-        background-color: $c-instagram;
-    }
-
+	.instagram {
+		a {
+	        background-color: $c-instagram;
+	    }
+	}
 }
 
-
 .contact-us-area {
-    //
-    // .info {
-    //     list-style-type: none;
-    //     margin-bottom: $s-lg;
-    //     padding-left: 0;
-    //
-    //     li {
-    //     }
-    // }
-
-
     .social {
         margin-bottom: $s-lg;
         padding-left: 0;
@@ -105,10 +100,10 @@
     }
 
     .form-control {
+		border: 1px solid gray('100'); //#e7e7e7;
+		color: gray('50'); // #232323;
         font-size: $font-size-sm;
-        border: 1px solid #e7e7e7;
         box-shadow: none;
-        color: #232323;
     }
 
     textarea {
@@ -121,151 +116,3 @@
         }
     }
 }
-
-// .contact-us-area .address .address-items h4 {
-//   font-weight: 600;
-//   position: relative;
-//   text-transform: uppercase;
-//   z-index: 1;
-// }
-//
-// .contact-us-area .address {
-//   padding-right: 35px;
-// }
-//
-// .contact-us-area .address .address-items ul {
-//   margin-bottom: 40px;
-// }
-//
-// .contact-us-area .address .address-items ul.social {
-//   margin-bottom: 50px;
-// }
-//
-// .contact-us-area .google-maps iframe {
-//   height: 300px;
-//   margin-bottom: -8px;
-//   width: 100%;
-// }
-//
-// .contact-us-area .address .social li {
-//   display: inline-block;
-// }
-//
-// .contact-us-area .address .social li a {
-//   -webkit-border-radius: 50%;
-//   -moz-border-radius: 50%;
-//   border-radius: 50%;
-//   color: #ffffff;
-//   display: inline-block;
-//   height: 40px;
-//   line-height: 40px;
-//   margin: 0 2px;
-//   text-align: center;
-//   width: 40px;
-// }
-//
-
-//
-// .contact-us-area .address-items .info li i {
-//   -webkit-border-radius: 50%;
-//   -moz-border-radius: 50%;
-//   border-radius: 50%;
-//   color: #4ac4f3;
-//   display: table-cell;
-//   font-size: 20px;
-//   text-align: center;
-//   vertical-align: top;
-//   width: 30px;
-// }
-//
-// .contact-form img {
-//   margin-left: 10px;
-// }
-//
-// .contact-us-area .address-items .info li span {
-//   display: table-cell;
-//   padding-left: 10px;
-//   vertical-align: middle;
-// }
-//
-// .contact-us-area .address-items .info li {
-//   margin-bottom: 15px;
-// }
-//
-// .contact-us-area .address-items .info li:last-child {
-//   margin: 0;
-// }
-//
-// .contact-us-area .contact-form h2 {
-//   font-weight: 600;
-//   margin-bottom: 30px;
-//   text-transform: capitalize;
-// }
-//
-// .contact-us-area .contact-form input {
-//   border: 1px solid #e7e7e7;
-//   box-shadow: inherit;
-//   color: #232323;
-// }
-//
-// .contact-us-area .contact-form textarea {
-//   border: 1px solid #e7e7e7;
-//   box-shadow: inherit;
-//   min-height: 300px;
-//   padding-top: 15px;
-// }
-//
-// .contact-us-area .contact-form button {
-//   background: #4ac4f3 none repeat scroll 0 0;
-//   border: medium none;
-//   box-shadow: inherit;
-//   color: #ffffff;
-//   display: inline-block;
-//   font-family: "Poppins",sans-serif;
-//   font-weight: 600;
-//   margin-top: 15px;
-//   padding: 10px 35px;
-//   text-transform: uppercase;
-//   -webkit-border-radius: 30px;
-//   -moz-border-radius: 30px;
-//   border-radius: 30px;
-// }
-//
-// .contact-us-area .contact-form button i {
-//   margin-left: 5px;
-// }
-//
-// .contact-form-area .alert-notification {
-//   margin-top: 15px;
-//   padding: 0;
-// }
-//
-// .contact-form-area .alert-notification .alert-error {
-//   background: #e7e7e7 none repeat scroll 0 0;
-//   color: red;
-//   margin-top: 0;
-//   text-align: left;
-// }
-//
-// .contact-form-area.bg-fixed .alert-notification .alert-error {
-//   background: #ffffff none repeat scroll 0 0;
-//   color: red;
-//   margin-top: 0;
-//   text-align: left;
-// }
-//
-//
-// .contact-us-area form.contact-form .alert-notification {
-//     margin-top: 30px;
-//     padding: 0;
-// }
-// .contact-us-area form.contact-form .alert-notification h3 {
-//     color: green;
-//     margin-bottom: 10px;
-// }
-//
-// .contact-us-area form.contact-form .alert-notification .alert-msg .alert-error {
-//   background: #f4f4f4 none repeat scroll 0 0;
-//   color: red;
-//   margin-top: 30px;
-// }

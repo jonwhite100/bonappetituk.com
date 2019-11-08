@@ -1,26 +1,17 @@
 @font-face {
     font-family: 'kunstler_scriptregular';
-    src: url('#{$understrap-font-path}/kunstler-webfont.eot');
-    src: url('#{$understrap-font-path}/kunstler-webfont.eot?#iefix') format('embedded-opentype'),
+	font-style: normal;
+	font-weight: normal;
+    src: url('#{$understrap-font-path}/kunstler-webfont.eot'),
+		url('#{$understrap-font-path}/kunstler-webfont.eot?#iefix') format('embedded-opentype'),
          url('#{$understrap-font-path}/kunstler-webfont.woff') format('woff'),
          url('#{$understrap-font-path}/kunstler-webfont.ttf') format('truetype'),
          url('#{$understrap-font-path}/kunstler-webfont.svg#kunstler_scriptregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
 }
 
 .text-center {
     text-align: center;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    // text-transform: uppercase;
 }
 
 p {
@@ -29,15 +20,15 @@ p {
 }
 
 .navbar-brand {
+	transition: font-size .25s;
     font-family: $bonappetit-font-family;
     font-size: $h1-font-size * 2;
     font-weight: bold;
     line-height: 1;
-    transition: font-size .25s;
 
     .shrink & {
+		transition: font-size .25s;
         font-size: $h1-font-size * 1.5;
-        transition: font-size .25s;
     }
 
     &-sub {
@@ -46,22 +37,22 @@ p {
         text-align: center;
 
         .shrink & {
+			transition: font-size .25s;
             font-size: $font-size-base * .75;
-            transition: font-size .25s;
         }
     }
 
 	@include media-breakpoint-down(xs) {
+		transition: font-size .25s;
 		font-size: $h1-font-size * 1.5;
-        transition: font-size .25s;
 	}
 }
 
 .section-heading {
 	display: inline-block;
+	position: relative;
     margin-bottom: $s-xl;
 	padding-bottom: 2rem;
-	position: relative;
     font-weight: 700;
 }
 
@@ -76,7 +67,7 @@ p {
 
     .entry-title,
     .entry-meta {
-        text-align: center;
         color: $white;
+		text-align: center;
     }
 }

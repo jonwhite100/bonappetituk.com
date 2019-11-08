@@ -68,7 +68,7 @@ $navbar-light-active-color:         rgba($primary, .9) !default;
 $navbar-light-disabled-color:       rgba($primary, .3) !default;
 
 
-// Shodows
+// Shadows
 $box-shadow: 0 0 6px darken($white, 25%) !default;
 
 // Spacers
@@ -80,9 +80,13 @@ $s-xs: $s-sm * .75;
 $s-lg: $s-md * 1.5;
 $s-xl: $s-lg * 1.5;
 
+
 // Card
 $card-spacer-y: .5rem !default; // 8px
 
 // List group
 $c-list-group-item-icon: $secondary !default;
 $c-list-group-item-icon-cross: $brand-danger !default;
+
+// Blog single post
+$c-single-post-bg-color: darken($white, 2%) !default;

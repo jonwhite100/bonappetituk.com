@@ -12,13 +12,13 @@
 }
 
 .se-pre-con {
-	width: 100%;
-	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 9999;
+	width: 100%;
+	height: 100%;
 	background: url('images/preloader.gif') center no-repeat $white;
+	z-index: 9999;
 }
 
 // temp logo sizing
@@ -37,11 +37,11 @@
 
     // Shrink the header
 	&.shrink {
+		top: 0;
 		height: 70px;
 		padding: $s-xs $s-sm;
-		top: 0;
-		background-color: $c-navbar-bg-shrink;
 		transition: all .33s ease-in-out;
+		background-color: $c-navbar-bg-shrink;
 
 		.mob-standard-logo {
 		  height: 70px;

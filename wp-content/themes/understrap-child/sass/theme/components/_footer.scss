@@ -35,14 +35,14 @@
 
     .icon {
         .fas {
-            height: $s-lg;
             width: $s-lg;
+			height: $s-lg;
             border-radius: 50%;
+			background: $grey-lightest none repeat scroll 0 0;
             color: $primary;
             font-size: $h4-font-size;
             line-height: $s-lg;
             text-align: center;
-            background: $grey-lightest none repeat scroll 0 0;
         }
     }
 
@@ -50,9 +50,9 @@
         padding-left: $s-sm;
 
         h5 {
-            font-size: $h5-font-size * 0.7;
+			margin-bottom: 0;
+			font-size: $h5-font-size * .7;
             font-weight: 600;
-            margin-bottom: 0;
             text-transform: uppercase;
         }
     }
@@ -66,98 +66,3 @@
         margin-left: 1rem;
     }
 }
-/*
-.footer-widget {
-    .f-items {
-        display: flex;
-    }
-
-    .f-item {
-        p {
-            color: gray('300');
-        }
-
-        h3,
-        h4 {
-            font-weight: 600;
-            margin-bottom: 25px;
-            position: relative;
-            z-index: 1;
-        }
-
-        img {
-            max-width: 150px;
-            margin-bottom: $s-md;
-        }
-    }
-
-    .link {
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        li {
-            margin-bottom: $s-md;
-        }
-
-        a {
-            color: gray('300');
-
-            &:hover {
-                color: $primary;
-                text-decoration: none;
-            }
-        }
-    }
-
-    .address {
-        ul {
-            padding-left: 0;
-        }
-
-        li {
-            display: flex;
-            align-items: center;
-            margin-bottom: $s-xs;
-
-        }
-
-        .icon,
-        .info {
-            // display: table-cell;
-            // vertical-align: middle;
-        }
-
-        .icon {
-            .fas {
-                background: $grey-lightest none repeat scroll 0 0;
-                border-radius: 50%;
-                color: $primary;
-                font-size: $h3-font-size;
-                height: 55px;
-                line-height: 55px;
-                text-align: center;
-                width: 60px;
-            }
-        }
-
-        .info {
-            padding-left: $s-sm;
-        }
-
-        h5 {
-            font-size: $h5-font-size * 0.7;
-            font-weight: 600;
-            margin-bottom: 0;
-            text-transform: uppercase;
-        }
-
-        span {
-            font-size: $font-size-base * 0.8;
-            color: gray('300');
-        }
-    }
-}
-
-*/

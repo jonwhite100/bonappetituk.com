@@ -1,10 +1,11 @@
-/*
+///
 // blog post. loop-templates/content-single.php
-*/
+///
 
 /// 1. single-post class is applied to the body tag
 .single-post {
-    background-color: lighten(gray('100'), 5%);
+    background-color: $c-single-post-bg-color;
+
     header {
         a {
             color: $white;
@@ -20,8 +21,8 @@
 
     .entry-title,
     .entry-meta {
-        text-align: center;
         color: $white;
+		text-align: center;
     }
 
     .card-body {
