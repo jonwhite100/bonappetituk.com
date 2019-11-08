@@ -8703,6 +8703,42 @@ a.skip-link {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -15126,6 +15162,11 @@ p {
 
 .contact-form button i {
   padding-left: 0.84375rem; }
+
+.section-newsletter .cmApp_signupContainer {
+  padding-top: 0; }
+  .section-newsletter .cmApp_signupContainer label {
+    color: #fff; }
 
 .listing-item .wp-post-image {
   width: 100%;

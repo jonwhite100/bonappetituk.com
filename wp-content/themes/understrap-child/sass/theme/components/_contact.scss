@@ -116,3 +116,16 @@
         }
     }
 }
+
+///
+// Newsletter / Campaign Monitor
+///
+.section-newsletter {
+	.cmApp_signupContainer {
+		padding-top: 0;
+
+		label {
+			color: $white;
+		}
+	}
+}
