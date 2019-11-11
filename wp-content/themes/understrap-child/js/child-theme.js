@@ -7073,8 +7073,16 @@ jQuery(document).ready(function($) {
     var scroll = new SmoothScroll('a[href*="#"]');
 
 	// delay showing content until scrolled into view
-	ScrollReveal().reveal('.section-about .col-md-8', { delay: 500 });
-	ScrollReveal().reveal('.section-about .col-md-4', { delay: 500 });
+	// ScrollReveal().reveal('.section-about .col-md-8', { delay: 500 });
+	// ScrollReveal().reveal('.section-about .col-md-4', { delay: 500 });
+	ScrollReveal().reveal('.section-testimonials .carousel', {
+		delay: 200
+	});
+	ScrollReveal().reveal('.card-testimonials', { interval: 200 });
+	ScrollReveal().reveal('.wp-block-image', {
+		interval: 200
+	});
+	ScrollReveal().reveal('.blocks-gallery-item', { interval: 200 });
 
     // $(document).on('click', 'a[href*="#"]:not([href="#"])', function(e) {
     //     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {

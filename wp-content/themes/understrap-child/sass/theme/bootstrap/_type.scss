@@ -14,7 +14,8 @@
     text-align: center;
 }
 
-p {
+p,
+li {
     font-size: $font-size-sm;
     line-height: 1.8;
 }
@@ -70,4 +71,14 @@ p {
         color: $white;
 		text-align: center;
     }
+}
+
+///
+// quotes on testimonials
+///
+.card-testimonials {
+	span {
+		color: gray('500');
+		font-style: italic;
+	}
 }

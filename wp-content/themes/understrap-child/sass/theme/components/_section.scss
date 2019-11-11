@@ -22,7 +22,7 @@
     padding-bottom: $s-xl * 1;
 }
 
-/// 1. pust the dark overlay over the bg image
+/// 1. puts the dark overlay over the bg image
 // TODO: move this somewhere better
 .fixed-bg {
     background-attachment: fixed;
@@ -31,7 +31,7 @@
     // z-index: -1;
 
     &-newsletter {
-        background-image: url('/wp-content/uploads/2019/09/bigplane-test-image.jpg');
+        background-image: url('http://localhost/bonappetituk.com/wp-content/uploads/2019/11/spread02-1.jpg');
     }
 
     &::after { // 1

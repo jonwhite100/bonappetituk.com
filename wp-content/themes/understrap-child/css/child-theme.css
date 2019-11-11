@@ -14789,6 +14789,9 @@ a.skip-link {
     margin-top: 0.84375rem;
     margin-bottom: 1.5rem; }
 
+.card-testimonials {
+  margin-bottom: 1.5rem; }
+
 .card-pricing {
   position: relative;
   margin-bottom: 2.25rem;
@@ -14993,7 +14996,8 @@ a.skip-link {
 .text-center {
   text-align: center; }
 
-p {
+p,
+li {
   font-size: 0.875rem;
   line-height: 1.8; }
 
@@ -15038,6 +15042,10 @@ p {
   .entry-header .entry-meta {
     color: #fff;
     text-align: center; }
+
+.card-testimonials span {
+  color: #adb5bd;
+  font-style: italic; }
 
 .single-post {
   background-color: #fafafa; }
@@ -15152,7 +15160,8 @@ p {
 .contact-form .wpcf7 input[type=submit], .wpcf7 .contact-form input[type=submit],
 .contact-form .wpcf7 select, .wpcf7 .contact-form select,
 .contact-form .wpcf7 textarea, .wpcf7 .contact-form textarea, .contact-form .wpcf7 .wpcf7-validation-errors, .wpcf7 .contact-form .wpcf7-validation-errors {
-  border: 1px solid #f8f9fa;
+  border: 1px solid #adb5bd;
+  color: #adb5bd;
   font-size: 0.875rem;
   -webkit-box-shadow: none;
           box-shadow: none; }
@@ -15447,7 +15456,7 @@ p {
   background-position: center center;
   background-size: cover; }
   .fixed-bg-newsletter {
-    background-image: url("/wp-content/uploads/2019/09/bigplane-test-image.jpg"); }
+    background-image: url("http://localhost/bonappetituk.com/wp-content/uploads/2019/11/spread02-1.jpg"); }
   .fixed-bg::after {
     position: absolute;
     top: 0;
@@ -15458,6 +15467,19 @@ p {
     content: '';
     opacity: .5;
     z-index: -2; }
+
+.sr .wp-block-image,
+.sr .blocks-gallery-item {
+  visibility: hidden; }
+
+.sr .section-testimonials .carousel {
+  visibility: hidden; }
+
+.sr .card-testimonials {
+  visibility: hidden; }
+
+.wp-block-image figcaption {
+  text-align: left; }
 
 .no-js #loader {
   display: none; }
