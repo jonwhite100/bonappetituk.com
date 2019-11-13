@@ -50,10 +50,10 @@
 	}
 
 	@include media-breakpoint-down(xs) {
-		height: 115px;
+		height: 150px;
 
 		&.shrink {
-			height: 115px;
+			height: 150px;
 		}
 	}
 }
@@ -67,9 +67,37 @@
     }
 }
 
+// style the burger menu dropdown
+.navbar-nav {
+	padding: 0 $s-sm;
+	transition: all .33s ease-in-out;
+
+	.show & {
+		background-color: $c-navbar-bg;
+	}
+
+	.shrink & {
+		background-color: $c-navbar-bg-shrink;
+	}
+}
+
+.navbar-brand {
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+		padding-bottom: $s-xs;
+		text-align: center;
+	}
+}
+
+.navbar-toggler {
+	@include media-breakpoint-down(sm) {
+		margin: auto;
+	}
+}
+
 // Leave space at the top of the page for the fixed navbar.
 .site {
-    margin-top: $s-lg;
+    margin-top: $s-xl + $s-sm;
 
 	@include media-breakpoint-up(md) {
 		margin-top: $s-xl;

@@ -8,3 +8,8 @@
 		text-align: left;
 	}
 }
+
+// Override recaptcha 3
+.grecaptcha-badge {
+	opacity: 0;
+}
