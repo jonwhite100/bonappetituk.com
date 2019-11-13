@@ -15,7 +15,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
-
+<div class="wrapper wrapper-footer-widgets">
+	<div class="container">
+		<div class="row">
+			<?php
+		  		if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar('footer-left') )
+			?>
+			<?php
+		  		if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar('footer-center') )
+			?>
+			<?php
+		  		if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar('footer-right') )
+			?>
+		</div>
+	</div>
+</div>
 <div class="wrapper" id="wrapper-footer">
 	<div class="<?php echo esc_attr( $container ); ?>">
 		<div class="row">

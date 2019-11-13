@@ -14753,7 +14753,9 @@ a.skip-link {
 
 .btn,
 .wpcf7 input[type=submit] {
-  border-radius: 3rem; }
+  border-radius: 3rem;
+  font-size: 0.85rem;
+  text-transform: uppercase; }
   .card-pricing .btn,
   .card-pricing .wpcf7 input[type=submit], .wpcf7 .card-pricing input[type=submit] {
     padding: 1.125rem 1.5rem;
@@ -14890,7 +14892,8 @@ a.skip-link {
 .jumbotron {
   padding-top: 2.25rem;
   border-radius: 0;
-  background-image: url("/bonappetituk.com/wp-content/uploads/2019/11/home-example.jpg"); }
+  background: url("../../../uploads/2019/11/do-not-use1.jpg") no-repeat center center fixed;
+  background-size: cover; }
   .jumbotron [class*='col-'] {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -14914,6 +14917,7 @@ a.skip-link {
     font-size: 4.5rem; }
   .jumbotron h2 {
     margin-bottom: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 2.5rem; }
   .jumbotron p {
     text-align: center; }
@@ -15294,24 +15298,34 @@ li {
 
 #wrapper-footer,
 #wrapper-footer-full,
-#wrapper-static-hero {
+#wrapper-static-hero,
+.wrapper-footer-widgets {
   background-color: #04678f;
   color: #fff;
   font-size: 0.85rem; }
   #wrapper-footer a,
   #wrapper-footer-full a,
-  #wrapper-static-hero a {
+  #wrapper-static-hero a,
+  .wrapper-footer-widgets a {
     color: #fff; }
+  #wrapper-footer h3,
+  #wrapper-footer-full h3,
+  #wrapper-static-hero h3,
+  .wrapper-footer-widgets h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem; }
+  #wrapper-footer .menu,
+  #wrapper-footer-full .menu,
+  #wrapper-static-hero .menu,
+  .wrapper-footer-widgets .menu {
+    padding-left: 0;
+    list-style: none; }
 
 #wrapper-footer {
   background-color: #000; }
 
 .site-info {
   color: #fff; }
-
-.footer-widget h3 {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem; }
 
 .contact-info li {
   display: -webkit-box;
@@ -15456,7 +15470,7 @@ li {
   background-position: center center;
   background-size: cover; }
   .fixed-bg-newsletter {
-    background-image: url("http://localhost/bonappetituk.com/wp-content/uploads/2019/11/spread02-1.jpg"); }
+    background-image: url("../../../uploads/2019/11/spread02-1.jpg"); }
   .fixed-bg::after {
     position: absolute;
     top: 0;

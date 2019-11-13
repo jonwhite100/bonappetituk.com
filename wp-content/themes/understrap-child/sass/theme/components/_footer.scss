@@ -1,13 +1,24 @@
 // Adding some contrast background color to footer full widget
 #wrapper-footer,
 #wrapper-footer-full,
-#wrapper-static-hero {
+#wrapper-static-hero,
+.wrapper-footer-widgets {
   background-color: $primary;
   color: $white;
   font-size: $font-size-base * .85;
 
   a {
     color: $white;
+  }
+
+  h3 {
+	margin-bottom: $s-md;
+	font-size: $h4-font-size;
+  }
+
+  .menu {
+	  padding-left: 0;
+	  list-style: none;
   }
 }
 
@@ -17,13 +28,6 @@
 
 .site-info {
   color: $white;
-}
-
-.footer-widget {
-  h3 {
-    margin-bottom: $s-md;
-    font-size: $h4-font-size;
-  }
 }
 
 .contact-info {

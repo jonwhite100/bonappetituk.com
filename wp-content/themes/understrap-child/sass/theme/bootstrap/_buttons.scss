@@ -4,6 +4,8 @@
 .btn {
 	// @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius-lg);
 	border-radius: $btn-border-radius-lg;
+	font-size: $font-size-base * .85;
+	text-transform: uppercase;
 
 	.card-pricing & {
 		padding: $s-sm $s-md;

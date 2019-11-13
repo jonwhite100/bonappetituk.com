@@ -28,6 +28,9 @@ $c-g-plus: #df4a32;
 $c-vimeo: #1ab7ea;
 $c-instagram: #cd486b;
 
+// path to wp-content/uploads to use images in css
+$path-to-uploads: '../../../' !default;
+
 // buttons
 $border-radius-lg: 3rem !default;
 $c-btn-pulsing-box-shadow: rgba(232, 76, 61, 0) !default;
@@ -55,6 +58,7 @@ $h6-font-size:                $font-size-base !default;
 // jumbotron
 $jumbotron-bg: transparent !default;
 $jumbotron-padding: 0 !default;
+$c-jumbotron-h2-bg: rgba(0, 0, 0, .5) !default;
 
 // navbar
 $c-navbar-bg: $white;
@@ -79,7 +83,6 @@ $s-sm: $s-md * .75;
 $s-xs: $s-sm * .75;
 $s-lg: $s-md * 1.5;
 $s-xl: $s-lg * 1.5;
-
 
 // Card
 $card-spacer-y: .5rem !default; // 8px

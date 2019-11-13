@@ -31,7 +31,7 @@
     // z-index: -1;
 
     &-newsletter {
-        background-image: url('http://localhost/bonappetituk.com/wp-content/uploads/2019/11/spread02-1.jpg');
+        background-image: url('#{$path-to-uploads}uploads/2019/11/spread02-1.jpg');
     }
 
     &::after { // 1

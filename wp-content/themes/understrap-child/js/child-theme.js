@@ -7084,20 +7084,6 @@ jQuery(document).ready(function($) {
 	});
 	ScrollReveal().reveal('.blocks-gallery-item', { interval: 200 });
 
-    // $(document).on('click', 'a[href*="#"]:not([href="#"])', function(e) {
-    //     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
-    //         var hashStr = this.hash.slice(1);
-    //         var target = $(this.hash);
-    //         target = target.length ? target : $('[name=' + hashStr +']');
-    //         if (target.length) {
-    //             $('html, body').animate({ scrollTop: target.offset().top }, 1000);
-    //             window.location.hash = hashStr;
-    //             return false;
-    //             e.preventDefault();
-    //         }
-    //     }
-    // });
-
     // script for multi slides per BS carousel. From https://www.codeply.com/go/3EQkUOhhZz
 	$('#carousel-films').carousel({
 		interval: 6000

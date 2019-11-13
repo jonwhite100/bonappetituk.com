@@ -86,3 +86,41 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 		return $post_excerpt;
 	}
 }
+
+/**
+* Split footer widget into x3 custom areas
+*/
+function register_additional_childtheme_sidebars() {
+    register_sidebar( array(
+        'id'            => 'footer-left',
+        'name'          => __( 'Footer Left', 'child-theme-textdomain' ),
+        'description'   => __( 'Custom footer left widget area', 'child-theme-textdomain' ),
+        'before_widget' => '<div class="col-sm-4 %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ));
+
+	register_sidebar( array(
+        'id'            => 'footer-center',
+        'name'          => __( 'Footer Center', 'child-theme-textdomain' ),
+        'description'   => __( 'Custom footer center widget area', 'child-theme-textdomain' ),
+        'before_widget' => '<div class="col-sm-4 %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ));
+
+	register_sidebar( array(
+        'id'            => 'footer-right',
+        'name'          => __( 'Footer Right', 'child-theme-textdomain' ),
+        'description'   => __( 'Custom footer right widget area', 'child-theme-textdomain' ),
+        'before_widget' => '<div class="col-sm-4 %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ));
+
+}
+
+add_action( 'init', 'register_additional_childtheme_sidebars' );
