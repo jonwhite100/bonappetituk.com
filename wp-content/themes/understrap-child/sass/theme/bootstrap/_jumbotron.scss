@@ -3,71 +3,100 @@
 //
 
 .jumbotron {
-    padding-top: $s-lg;
+	position: relative;
     border-radius: 0;
-    background: url('#{$path-to-uploads}uploads/2019/11/do-not-use1.jpg') no-repeat center center fixed;
-	background-size: cover;
+    padding-top: $s-lg;
 
-    [class*='col-'] {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    h1,
-	h2 {
-		color: $white;
-		font-family: $font-family-sans-serif;
-		text-align: center;
-		text-transform: uppercase;
-    }
-
-    h1 {
-        margin-top: $s-xl;
-        margin-bottom: $s-lg;
-        font-size: $h1-font-size;
-
-		@include media-breakpoint-up(md) {
-			font-size: $h1-font-size * 2;
-		}
-    }
-
-    h2 {
-        margin-bottom: $s-md;
-		background-color: $c-jumbotron-h2-bg;
-        font-size: 1.75rem;
-
-		@include media-breakpoint-up(md) {
-			font-size: 2.5rem;
-		}
-    }
-
-    p {
-        text-align: center;
-    }
-
-    .lead {
-        color: gray('600');
-    }
+	background-color: green;
 }
 
-.jumbotron-main {
-    min-height: 30rem;
-    padding-top: $s-xl;
-    padding-bottom: $s-xl;
+.jumbtron-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: orange;
+	overflow: hidden;
+	display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
 }
 
-.jumbotron-base {
-    // background-color: $jumbotron-bg;
 
-    &-curve {
-		display: block;
-		position: relative;
-		margin-bottom: 0;
-        padding-bottom: 0;
-
-        path {
-            fill: $white;
-        }
-    }
-}
+// .jumbotron {
+//     background: url('#{$path-to-uploads}uploads/2019/11/do-not-use1.jpg') no-repeat center center fixed;
+// 	background-size: cover;
+//
+// 	@include media-breakpoint-down(sm) {
+// 		background-attachment: scroll;
+// 	}
+//
+//     [class*='col-'] {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//     }
+//
+//     h1,
+// 	h2 {
+// 		color: $white;
+// 		font-family: $font-family-sans-serif;
+// 		text-align: center;
+// 		text-transform: uppercase;
+//     }
+//
+//     h1 {
+//         margin-top: $s-xl;
+//         margin-bottom: $s-lg;
+//         font-size: $h1-font-size;
+//
+// 		@include media-breakpoint-up(md) {
+// 			font-size: $h1-font-size * 2;
+// 		}
+//     }
+//
+//     h2 {
+//         margin-bottom: $s-md;
+// 		background-color: $c-jumbotron-h2-bg;
+//         font-size: 1.75rem;
+//
+// 		@include media-breakpoint-up(md) {
+// 			font-size: 2.5rem;
+// 		}
+//     }
+//
+//     p {
+//         text-align: center;
+//     }
+//
+//     .lead {
+//         color: gray('600');
+//     }
+// }
+//
+//
+// .jumbotron-main {
+//     min-height: 30rem;
+//     padding-top: $s-xl;
+//     padding-bottom: $s-xl;
+// }
+//
+// .jumbotron-base {
+//     // background-color: $jumbotron-bg;
+//
+//     &-curve {
+// 		display: block;
+// 		position: relative;
+// 		margin-bottom: 0;
+//         padding-bottom: 0;
+//
+//         path {
+//             fill: $white;
+//         }
+//     }
+// }

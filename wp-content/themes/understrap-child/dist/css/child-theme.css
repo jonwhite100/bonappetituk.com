@@ -13366,9 +13366,9 @@ li {
       transition: all .33s ease-in-out; }
   @media (max-width: 575.98px) {
     .navbar {
-      height: 150px; }
+      height: 105px; }
       .navbar.shrink {
-        height: 150px; } }
+        height: 105px; } }
 
 .navbar-expand-md .navbar-nav .nav-link {
   padding-right: 1.125rem;
@@ -13385,16 +13385,10 @@ li {
 
 @media (max-width: 767.98px) {
   .navbar-brand {
-    width: 100%;
-    padding-bottom: 0.84375rem;
-    text-align: center; } }
-
-@media (max-width: 767.98px) {
-  .navbar-toggler {
-    margin: auto; } }
+    width: 50%; } }
 
 .site {
-  margin-top: 4.5rem; }
+  margin-top: 3.375rem; }
   @media (min-width: 768px) {
     .site {
       margin-top: 3.375rem; } }

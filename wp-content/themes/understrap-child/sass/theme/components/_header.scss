@@ -50,10 +50,10 @@
 	}
 
 	@include media-breakpoint-down(xs) {
-		height: 150px;
+		height: 105px;
 
 		&.shrink {
-			height: 150px;
+			height: 105px;
 		}
 	}
 }
@@ -83,21 +83,21 @@
 
 .navbar-brand {
 	@include media-breakpoint-down(sm) {
-		width: 100%;
-		padding-bottom: $s-xs;
-		text-align: center;
+		width: 50%;
+		// padding-bottom: $s-xs;
+		// text-align: center;
 	}
 }
 
 .navbar-toggler {
 	@include media-breakpoint-down(sm) {
-		margin: auto;
+		// margin: auto;
 	}
 }
 
 // Leave space at the top of the page for the fixed navbar.
 .site {
-    margin-top: $s-xl + $s-sm;
+    margin-top: $s-xl;
 
 	@include media-breakpoint-up(md) {
 		margin-top: $s-xl;
