@@ -1,26 +1,3 @@
-#loader {
-	.no-js & {
-		display: none;
-	}
-
-	.js & {
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 100px;
-	}
-}
-
-.se-pre-con {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: url('images/preloader.gif') center no-repeat $white;
-	z-index: 9999;
-}
-
 // temp logo sizing
 .custom-logo-link {
 	img {
@@ -28,12 +5,15 @@
 	}
 }
 
+#wpadminbar {
+	display: none;
+}
+
 // Navbar shrinking
 .navbar {
     padding: 1rem;
     background-color: $c-navbar-bg;
-    // border-bottom: 1px solid $c-navbar-border;
-	box-shadow: 0 3px 6px 0 $c-navbar-box-shadow;
+    box-shadow: 0 3px 6px 0 $c-navbar-box-shadow;
 
     // Shrink the header
 	&.shrink {
@@ -43,18 +23,13 @@
 		transition: all .33s ease-in-out;
 		background-color: $c-navbar-bg-shrink;
 
-		.mob-standard-logo {
-		  height: 70px;
-		  transition: all .33s ease-in-out;
+		@include media-breakpoint-down(xs) {
+			height: 75px;
 		}
 	}
 
 	@include media-breakpoint-down(xs) {
-		height: 105px;
-
-		&.shrink {
-			height: 75px;
-		}
+		height: 75px;
 	}
 }
 
@@ -105,41 +80,15 @@
         .shrink & {
 			transition: font-size .25s;
             font-size: $font-size-base * .75;
-
-			@include media-breakpoint-down(sm) {
-				display: none;
-			}
         }
+
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
     }
 
 	@include media-breakpoint-down(xs) {
 		transition: font-size .25s;
-		font-size: $h1-font-size * 1.5;
+		font-size: $h1-font-size * 1.25;
 	}
-}
-
-.navbar-toggler {
-	@include media-breakpoint-down(sm) {
-		// margin: auto;
-	}
-}
-
-// Leave space at the top of the page for the fixed navbar.
-.site {
-    margin-top: $s-xl;
-
-	@include media-breakpoint-up(md) {
-		margin-top: $s-xl;
-	}
-
-	@include media-breakpoint-up(lg) {
-		margin-top: $s-xl + $s-xs;
-	}
-}
-
-// hide page title on home page
-.home {
-    .entry-header {
-        display: none;
-    }
 }

@@ -1,8 +1,76 @@
 ///
+// Font awesome
+///
+
+/// Variations - when item witin li with text to the right (e.g. address)
+.fa-in-list {
+	margin-right: $s-xs;
+	color: $c-fa-no-bg;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+/// 1. fa-stack-border is a bordered circle with an icon in it
+.fa-stack {
+	.fa-stack-1x { // inner
+		color: $c-fa-stack-icon-inner;
+	}
+
+	.fa-stack-2x { // outer
+		color: $c-fa-stack-icon-outer;
+
+		.social & {
+			color: transparent;
+		}
+	}
+
+	&-border {
+		display: flex;
+		align-items: center;
+		width: $s-fa-stack-border;
+		height: $s-fa-stack-border;
+		border-radius: 50%;
+		background-color: $c-fa-stack-border;
+		line-height: $s-fa-stack-border;
+
+		.fa-stack-1x { // inner
+			font-size: $s-fa-stack-sm-icon-inner;
+		}
+
+		.fa-stack-2x { // outer
+			font-size: $s-fa-stack-sm-icon;
+		}
+	}
+
+	&-inverted {
+		.fa-stack-1x { // inner
+			color: $c-fa-stack-icon-inner-inverted;
+		}
+
+		.fa-stack-2x { // outer
+			color: $c-fa-stack-icon-outer-inverted;
+		}
+	}
+
+	&-lg {
+		width: $s-fa-stack-lg-icon;
+		height: $s-fa-stack-lg-icon;
+		line-height: $s-fa-stack-lg-icon;
+
+		.fa-stack-1x { // inner
+			font-size: $s-fa-stack-lg-icon-inner;
+		}
+
+		.fa-stack-2x { // outer
+			font-size: $s-fa-stack-lg-icon;
+		}
+	}
+}
+
+///
 //  Flaticon icon font: Flaticon
 //  Creation date: 08/09/2018 00:19
 ///
-
 @font-face {
 	font-family: 'Flaticon';
 	font-style: normal;

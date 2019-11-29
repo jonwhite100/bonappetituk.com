@@ -10,40 +10,13 @@
 // @import 'components/companies'; // Sasify!!
 @import 'components/contact'; // Still some sass to do
 @import 'components/display-posts';
-@import 'components/flaticon';
+@import 'components/icons';
 @import 'components/footer';
 @import 'components/header';
 @import 'components/multi-item-carousel';
+@import 'components/preloader';
 @import 'components/section';
 @import 'components/scroll-reveal'; // scrollreveal.js
 @import 'components/wp-overrides';
 
 // @include media-breakpoint-up(md) {}
-
-///
-// Preloader
-///
-.no-js {
-    #loader {
-        display: none;
-    }
-}
-
-.js {
-    #loader {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 100px;
-    }
-}
-
-.se-pre-con {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-    background: url('../images/preloader.gif') center no-repeat $white;
-	z-index: 9999;
-}

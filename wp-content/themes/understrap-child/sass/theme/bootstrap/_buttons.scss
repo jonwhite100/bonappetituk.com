@@ -18,13 +18,13 @@
 ///
 // Pulsing button
 ///
-@keyframes pulse {to {box-shadow: 0 0 0 1.5rem $c-btn-pulsing-box-shadow;}}
-
-.btn-pulse {
-    box-shadow: 0 0 0 0 $secondary;
-    animation: pulse 2s infinite cubic-bezier(.66, 0, 0, 1);
-
-    &::hover {
-        animation: none;
-    }
-}
+// @keyframes pulse {to {box-shadow: 0 0 0 1.5rem $c-btn-pulsing-box-shadow;}}
+//
+// .btn-pulse {
+//     box-shadow: 0 0 0 0 $secondary;
+//     animation: pulse 2s infinite cubic-bezier(.66, 0, 0, 1);
+//
+//     &::hover {
+//         animation: none;
+//     }
+// }

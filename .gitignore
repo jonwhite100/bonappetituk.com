@@ -5,6 +5,7 @@ wp-content/upgrade/*
 wp-content/uploads/*
 sitemap.*
 wp-config.php
+ftp-understrap-child-dist.bat
 
 # Hidden system files
 *.DS_Store

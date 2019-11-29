@@ -1,21 +1,31 @@
 //
 // Override BS4
 //
-
 .jumbotron {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 30rem;
+	min-height: $s-jumbotron-height / 2;
 	border-radius: 0;
 	overflow: hidden;
+
+	@include media-breakpoint-up(md) {
+		min-height: $s-jumbotron-height / 1.5;
+	}
+
+	@include media-breakpoint-up(lg) {
+		min-height: $s-jumbotron-height;
+	}
 }
 
 .jumbtron-bg {
 	position: absolute;
+	top: 0;
+	bottom: 0;
 	width: 100%;
-	height: 30rem;
+	min-height: $s-jumbotron-height / 2;
 	overflow: hidden;
 	z-index: 0;
 
@@ -23,6 +33,14 @@
 		width: 100%;
 		min-height: 100%;
 		object-fit: cover;
+	}
+
+	@include media-breakpoint-up(md) {
+		min-height: $s-jumbotron-height / 1.5;
+	}
+
+	@include media-breakpoint-up(lg) {
+		min-height: $s-jumbotron-height;
 	}
 }
 
@@ -35,45 +53,49 @@
 	width: 100%;
 	margin: auto;
 
-	    h1,
+		h1,
 		h2 {
-			color: $white;
+			color: $c-jumbotron-heading;
 			font-family: $font-family-sans-serif;
 			text-align: center;
 			text-transform: uppercase;
-	    }
+		}
 
-	    h1 {
-	        margin-top: $s-xl;
-	        margin-bottom: $s-lg;
-	        font-size: $h1-font-size;
+		h1 {
+			margin-top: $s-xl;
+			margin-bottom: $s-lg;
+			font-size: $h1-font-size;
 
 			@include media-breakpoint-up(md) {
 				font-size: $h1-font-size * 2;
 			}
-	    }
+		}
 
-	    h2 {
-	        margin-bottom: $s-md;
+		h2 {
+			margin-bottom: $s-md;
 			background-color: $c-jumbotron-h2-bg;
-	        font-size: 1.75rem;
+			font-size: 1.75rem;
+			text-transform: uppercase;
 
 			@include media-breakpoint-up(md) {
+				margin-bottom: $s-xl;
 				font-size: 2.5rem;
 			}
-	    }
+		}
 
-	    p {
-	        text-align: center;
-	    }
+		p {
+			text-align: center;
+		}
 
-	    .lead {
-	        color: gray('600');
-	    }
+		.lead {
+			color: gray('600');
+		}
 }
 
+/// 1. there is a weird gap at the bottom that shows the bg image. this fixes it but not ideal solution!
 .jumbotron-base {
 	width: 100%;
+	margin-bottom: -3px; // 1
 
 	&-curve {
 		display: block;
@@ -86,72 +108,3 @@
 		}
 	}
 }
-
-
-
-// .jumbotron {
-// 	display: flex;
-// 	position: relative;
-// 	min-height: 30rem;
-//
-//
-// 	padding-top: $s-lg;
-//
-// 	background-color: green;
-// }
-//
-// .jumbtron-bg {
-// 	display: flex;
-// 	position: absolute;
-// 	align-items: center;
-// 	justify-content: center;
-// 	width: 100%;
-// 	height: 100%;
-// 	background-color: orange;
-// 	overflow: hidden;
-//
-// 	img {
-// 	    flex-shrink: 0;
-// 	    min-width: 100%;
-// 	    max-width: 100%;
-// 	    min-height: 100%;
-//
-//
-// 	}
-// }
-//
-// .jumbotron-main {
-// 	display: flex;
-// 	flex-direction: column;
-// 	position: relative;
-// 	align-items: center;
-// 	justify-content: center;
-//     // padding-top: $s-xl;
-//     // padding-bottom: $s-xl;
-// }
-//
-// .jumbotron-base {
-// 	margin-top: auto;
-//     // background-color: $jumbotron-bg;
-//
-// }
-
-
-// .jumbotron {
-//     background: url('#{$path-to-uploads}uploads/2019/11/do-not-use1.jpg') no-repeat center center fixed;
-// 	background-size: cover;
-//
-// 	@include media-breakpoint-down(sm) {
-// 		background-attachment: scroll;
-// 	}
-//
-//     [class*='col-'] {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//     }
-//
-
-// }
-//
-//
