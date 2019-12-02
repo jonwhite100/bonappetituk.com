@@ -1,0 +1,12 @@
+// Leave space at the top of the page for the fixed navbar.
+.site {
+    margin-top: $s-lg + $s-xs;
+
+	@include media-breakpoint-up(md) {
+		margin-top: $s-xl + $s-md;
+	}
+
+	@include media-breakpoint-up(lg) {
+		margin-top: $s-xl + $s-md;
+	}
+}

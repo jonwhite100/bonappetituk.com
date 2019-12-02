@@ -23,11 +23,13 @@
 }
 
 #wrapper-footer {
-  background-color: $black;
+	background-color: $black;
 }
 
 .site-info {
-  color: $white;
+	padding-top: $s-md;
+	padding-bottom: $s-md;
+	color: $white;
 }
 
 .contact-info {

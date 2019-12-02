@@ -2,11 +2,11 @@
     font-family: 'kunstler_scriptregular';
 	font-style: normal;
 	font-weight: normal;
-    src: url('#{$understrap-font-path}/kunstler-webfont.eot'),
-		url('#{$understrap-font-path}/kunstler-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$understrap-font-path}/kunstler-webfont.woff') format('woff'),
-         url('#{$understrap-font-path}/kunstler-webfont.ttf') format('truetype'),
-         url('#{$understrap-font-path}/kunstler-webfont.svg#kunstler_scriptregular') format('svg');
+    src: url('#{$path-to-fonts}/kunstler-webfont.eot'),
+		url('#{$path-to-fonts}/kunstler-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$path-to-fonts}/kunstler-webfont.woff') format('woff'),
+         url('#{$path-to-fonts}/kunstler-webfont.ttf') format('truetype'),
+         url('#{$path-to-fonts}/kunstler-webfont.svg#kunstler_scriptregular') format('svg');
 
 }
 
