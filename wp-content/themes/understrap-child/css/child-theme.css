@@ -9175,6 +9175,34 @@ a.skip-link {
   color: #495057;
   line-height: 1.5; }
 
+.wrapper-footer-widgets {
+  background-color: #04678f;
+  color: #fff;
+  font-size: 0.85rem; }
+  .wrapper-footer-widgets a {
+    color: #fff; }
+  .wrapper-footer-widgets h3 {
+    margin-bottom: 2rem;
+    font-size: 1.1rem; }
+  .wrapper-footer-widgets .menu {
+    padding-left: 0;
+    list-style: none; }
+
+#wrapper-footer {
+  background-color: #04678f; }
+
+.site-info {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  font-size: 0.75rem; }
+
+.footer-menu {
+  text-align: right; }
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 1rem; }
+
 .fa-in-list {
   margin-right: 0.5rem;
   color: #04678f;
@@ -9397,6 +9425,23 @@ a.skip-link {
     .jumbotron-base-curve path,
     .jumbotron-base-curve polygon {
       fill: #fff; }
+
+.list-icon li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 0.5rem; }
+
+.list-icon-text {
+  padding-left: 1rem; }
+  .list-icon-text h5 {
+    margin-bottom: 0;
+    font-size: 0.77rem;
+    font-weight: 600;
+    text-transform: uppercase; }
 
 .no-js #loader {
   display: none; }
@@ -9892,72 +9937,6 @@ li {
 .listing-item .btn,
 .listing-item .wpcf7 input[type=submit], .wpcf7 .listing-item input[type=submit] {
   margin-top: 2rem; }
-
-#wrapper-footer,
-#wrapper-footer-full,
-#wrapper-static-hero,
-.wrapper-footer-widgets {
-  background-color: #04678f;
-  color: #fff;
-  font-size: 0.85rem; }
-  #wrapper-footer a,
-  #wrapper-footer-full a,
-  #wrapper-static-hero a,
-  .wrapper-footer-widgets a {
-    color: #fff; }
-  #wrapper-footer h3,
-  #wrapper-footer-full h3,
-  #wrapper-static-hero h3,
-  .wrapper-footer-widgets h3 {
-    margin-bottom: 2rem;
-    font-size: 1.1rem; }
-  #wrapper-footer .menu,
-  #wrapper-footer-full .menu,
-  #wrapper-static-hero .menu,
-  .wrapper-footer-widgets .menu {
-    padding-left: 0;
-    list-style: none; }
-
-#wrapper-footer {
-  background-color: #000; }
-
-.site-info {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  color: #fff; }
-
-.contact-info li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 0.5rem; }
-
-.contact-info .icon .fas {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  background: #edf5ff none repeat scroll 0 0;
-  color: #04678f;
-  font-size: 1.1rem;
-  line-height: 4rem;
-  text-align: center; }
-
-.contact-info .info {
-  padding-left: 1rem; }
-  .contact-info .info h5 {
-    margin-bottom: 0;
-    font-size: 0.77rem;
-    font-weight: 600;
-    text-transform: uppercase; }
-
-.footer-menu {
-  text-align: right; }
-  .footer-menu li {
-    display: inline-block;
-    margin-left: 1rem; }
 
 .custom-logo-link img {
   max-width: 200px; }
