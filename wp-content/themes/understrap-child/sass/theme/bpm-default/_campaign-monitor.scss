@@ -1,3 +1,6 @@
+///
+// Newsletter / Campaign Monitor
+///
 .section-newsletter {
     input {
         // height: $input-height;
@@ -9,4 +12,12 @@
         // background-color: $input-bg;
         // border: $input-border-width solid $input-border-color;
     }
+
+	.cmApp_signupContainer {
+		padding-top: 0;
+
+		label {
+			color: $white;
+		}
+	}
 }

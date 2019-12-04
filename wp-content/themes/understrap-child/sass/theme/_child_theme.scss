@@ -1,38 +1,25 @@
 // Load up the bpm-default files first
-@import 'bpm-default/blog';
-@import 'bpm-default/campaign-monitor'; // Comment this out if not used
+// Comment out any files not used
+@import 'bpm-default/buttons';
+// @import 'bpm-default/campaign-monitor';
+@import 'bpm-default/card';
+@import 'bpm-default/carousel';
+@import 'bpm-default/contact'; // TODO: sort this one out
+// @import 'bpm-default/display-posts';
+@import 'bpm-default/fixed-bg';
 @import 'bpm-default/footer';
+@import 'bpm-default/form';
+@import 'bpm-default/header';
 @import 'bpm-default/icons';
 @import 'bpm-default/jumbotron';
 @import 'bpm-default/lists';
+@import 'bpm-default/list-group';
+@import 'bpm-default/multi-item-carousel';
 @import 'bpm-default/preloader';
-@import 'bpm-default/vendor-overrides'; // override WP and Understrap
-
+@import 'bpm-default/scroll-reveal';
+@import 'bpm-default/section';
+@import 'bpm-default/social-media';
+@import 'bpm-default/type';
 @import 'bpm-overrides/jumbotron';
 @import 'bpm-overrides/vendor-overrides'; // override WP and Understrap
-
-
-@import 'bootstrap/buttons';
-@import 'bootstrap/card';
-@import 'bootstrap/carousel';
-@import 'bootstrap/form';
-@import 'bootstrap/list-group';
-@import 'bootstrap/type';
-
-// @import 'components/about'; // Sassify!!
-@import 'components/companies'; // Sasify!!
-@import 'components/contact'; // Still some sass to do
-@import 'components/display-posts';
-// @import 'components/footer';
-@import 'components/header';
-@import 'components/multi-item-carousel';
-// @import 'components/pricing';
-@import 'components/section';
-// @import 'components/wp-overrides';
-
 // @include media-breakpoint-up(md) {}
-
-
-//
-// @import 'components/scroll-reveal'; // scrollreveal.js
-// // @include media-breakpoint-up(md) {}

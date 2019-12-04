@@ -8,6 +8,10 @@
 // Buttons
 $c-btn-pulse: rgba($secondary, 0) !default;
 
+// Fixed background
+$path-to-fixed-bg-newsletter: 'uploads/2019/12/craft-coffee-valencia-1024x768.jpg' !default;
+$c-fixed-bg-overlay: $black !default;
+
 // Footer widgets
 $c-wrapper-footer-widgets: $white !default;
 $c-wrapper-footer-widgets-bg: $primary !default;
@@ -15,7 +19,9 @@ $c-wrapper-footer-widgets-link: $white !default;
 
 // Footer copyright info
 $c-wrapper-footer: $white !default;
-$c-wrapper-footer-bg: $primary !default;
+$c-wrapper-footer-bg: $black !default;
+
+$c-footer-menu-link: $white !default;
 
 // Jumbotron
 $c-jumbotron-h1: $white !default;

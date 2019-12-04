@@ -1,0 +1,23 @@
+.section {
+    position: relative;
+    padding-top: $s-xl;
+    padding-bottom: $s-xl;
+	z-index: 1;
+}
+
+.section-newsletter,
+.section-whatever {
+    h2,
+    p {
+        color: $white;
+    }
+}
+
+.section-scroll-to {
+    display: flex;
+    margin-top: $s-lg;
+}
+
+.section-testimonials {
+    padding-bottom: $s-xl * 1;
+}

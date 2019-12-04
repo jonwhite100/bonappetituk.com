@@ -124,3 +124,11 @@ function register_additional_childtheme_sidebars() {
 }
 
 add_action( 'init', 'register_additional_childtheme_sidebars' );
+
+/**
+* BPM remove Contact Form 7 styling; now only use the understrap wpcf7 styling
+*/
+add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
+function wps_deregister_styles() {
+    wp_deregister_style( 'contact-form-7' );
+}
