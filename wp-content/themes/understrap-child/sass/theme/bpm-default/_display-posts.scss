@@ -3,15 +3,24 @@
 // So be careful when updating the plugin! Added card and card-blog-post to the $class array ('listing-item')
 // added card-img-top to image class.
 ///
+.section-jobs {
+	.col-md-6 {
+		margin-bottom: $s-lg;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
 
 .listing-item {
     .wp-post-image {
-        width: 100%;
-        height: auto;
+        width: 100% !important; // sass-lint:disable-line no-important
+        height: auto !important; // sass-lint:disable-line no-important
     }
 
 	a {
-		&.card-title {
+		.card-title {
 			margin-bottom: $s-sm;
 			padding-top: $s-md;
 			padding-right: $s-md;
@@ -27,16 +36,25 @@
 		}
 	}
 
-	.excerpt-dash {
+    .excerpt-dash {
         display: none;
     }
 
     .card-text {
+		min-height: $s-xl * 7.5;
         padding-right: $s-md;
         padding-bottom: $s-md;
         padding-left: $s-md;
-        font-size: $font-size-base * .9;
+		font-size: $font-size-base * .9;
         line-height: $font-size-base * 1.8;
+
+		@include media-breakpoint-up(lg) {
+			min-height: $s-xl * 8.5;
+		}
+
+		@include media-breakpoint-up(xl) {
+			min-height: $s-xl * 4;
+		}
     }
 
     .btn {

@@ -20,6 +20,29 @@
 @import 'bpm-default/section';
 @import 'bpm-default/social-media';
 @import 'bpm-default/type';
+@import 'bpm-default/vendor-overrides'; // override WP and Understrap
+
+// Override bpm-default (site specific styling)
+@import 'bpm-overrides/buttons';
+@import 'bpm-overrides/campaign-monitor';
+@import 'bpm-overrides/card';
+@import 'bpm-overrides/carousel';
+@import 'bpm-overrides/contact';
+@import 'bpm-overrides/display-posts';
+@import 'bpm-overrides/fixed-bg';
+@import 'bpm-overrides/footer';
+@import 'bpm-overrides/form';
+@import 'bpm-overrides/header';
+@import 'bpm-overrides/icons';
 @import 'bpm-overrides/jumbotron';
-@import 'bpm-overrides/vendor-overrides'; // override WP and Understrap
+@import 'bpm-overrides/lists';
+@import 'bpm-overrides/list-group';
+@import 'bpm-overrides/multi-item-carousel';
+@import 'bpm-overrides/preloader';
+@import 'bpm-overrides/scroll-reveal';
+@import 'bpm-overrides/section';
+@import 'bpm-overrides/social-media';
+@import 'bpm-overrides/type';
+@import 'bpm-overrides/vendor-overrides';
+
 // @include media-breakpoint-up(md) {}

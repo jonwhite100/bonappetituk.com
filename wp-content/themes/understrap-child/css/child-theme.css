@@ -9895,6 +9895,39 @@ li {
   color: #adb5bd;
   font-style: italic; }
 
+.home .entry-header {
+  display: none; }
+
+.wrapper {
+  padding: 0; }
+  .wrapper-footer-widgets {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+
+.wp-block-image figcaption {
+  text-align: left; }
+
+.grecaptcha-badge {
+  opacity: 0; }
+
+.single-post {
+  background-color: #fafafa; }
+  .single-post header a {
+    color: #fff; }
+  .single-post .entry-header {
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #04678f; }
+  .single-post .entry-title,
+  .single-post .entry-meta {
+    color: #fff;
+    text-align: center; }
+  .single-post .card-body {
+    padding: 4rem; }
+  .single-post .wp-post-image {
+    border-bottom: 1px solid #e9ecef; }
+
 .jumbotron {
   min-height: 48rem; }
   @media (min-width: 768px) {

@@ -18,3 +18,9 @@
 		text-transform: uppercase;
 	}
 }
+
+.list-3-col {
+	@include media-breakpoint-up(md) {
+		column-count: 3;
+	}
+}
