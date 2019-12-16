@@ -10,3 +10,8 @@
 		margin-top: $s-xl + $s-md;
 	}
 }
+
+// Override recaptcha 3
+.grecaptcha-badge {
+	opacity: 1;
+}

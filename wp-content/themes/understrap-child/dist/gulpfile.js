@@ -166,8 +166,8 @@ gulp.task( 'copy-assets', function() {
         .pipe( gulp.dest( `${paths.dev}/js/bootstrap4` ) );
 
 // Copy all Bootstrap SCSS files
-    gulp.src( `${paths.node}bootstrap/scss/**/*.scss` )
-        .pipe( gulp.dest( `${paths.dev}/sass/bootstrap4` ) );
+    // gulp.src( `${paths.node}bootstrap/scss/**/*.scss` )
+    //     .pipe( gulp.dest( `${paths.dev}/sass/bootstrap4` ) );
 
 ////////////////// End Bootstrap 4 Assets /////////////////////////
 
@@ -189,10 +189,10 @@ gulp.task( 'copy-assets', function() {
         .pipe( gulp.dest( `${paths.dev}/js` ) );
 
 // Copy Popper JS files
-    gulp.src( `${paths.node}popper.js/dist/umd/popper.min.js` )
-        .pipe( gulp.dest( `${paths.js}${paths.vendor}` ) );
-    gulp.src( `${paths.node}popper.js/dist/umd/popper.js` )
-        .pipe( gulp.dest( `${paths.js}${paths.vendor}` ) );
+    // gulp.src( `${paths.node}popper.js/dist/umd/popper.min.js` )
+    //     .pipe( gulp.dest( `${paths.js}${paths.vendor}` ) );
+    // gulp.src( `${paths.node}popper.js/dist/umd/popper.js` )
+    //     .pipe( gulp.dest( `${paths.js}${paths.vendor}` ) );
 
 // UnderStrap SCSS files
     gulp.src( `${paths.node}understrap/sass/**/*.scss` )
@@ -222,7 +222,7 @@ gulp.task( 'dist', gulp.series('clean-dist', function copyToDistFolder() {
 
   return gulp.src( ['**/*', ...ignorePaths, ...ignoreFiles,  '*'], { 'buffer': false } )
   .pipe( replace( '/js/jquery.slim.min.js', `/js${paths.vendor}/jquery.slim.min.js`, { 'skipBinary': true } ) )
-  .pipe( replace( '/js/popper.min.js', `/js${paths.vendor}/popper.min.js`, { 'skipBinary': true } ) )
+  // .pipe( replace( '/js/popper.min.js', `/js${paths.vendor}/popper.min.js`, { 'skipBinary': true } ) )
   .pipe( replace( '/js/skip-link-focus-fix.js', `/js${paths.vendor}/skip-link-focus-fix.js`, { 'skipBinary': true } ) )
     .pipe( gulp.dest( paths.dist ) );
 }));

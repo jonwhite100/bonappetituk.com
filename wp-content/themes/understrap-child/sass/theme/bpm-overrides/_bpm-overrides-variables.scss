@@ -17,6 +17,7 @@ $font-family-sans-serif: 'Open Sans', sans-serif !default;
 $headings-font-family: 'Poppins', sans-serif !default;
 $headings-font-weight: 600 !default;
 $headings-text-transform: 'none' !default;
+$bonappetit-font-family: 'kunstler_scriptregular' !default; // font-family: $bonappetit-font-family;
 
 // Footer widgets
 $c-wrapper-footer-widgets: $white !default;
@@ -38,7 +39,7 @@ $s-jumbotron-height: $s-xl * 8 !default;
 $jumbotron-bg: transparent !default;
 
 // Navbar
-$navbar-light-color:                $white !default;
+$navbar-light-color:                darken($primary, 10%) !default;
 $navbar-light-color-shrink:         $secondary !default;
 $navbar-light-hover-color:          rgba($primary, .7) !default;
 $navbar-light-active-color:         rgba($primary, .7) !default;
