@@ -1,13 +1,11 @@
 @font-face {
-    font-family: 'kunstler_scriptregular';
-	font-style: normal;
-	font-weight: normal;
-    src: url('#{$path-to-fonts}/kunstler-webfont.eot'),
-		url('#{$path-to-fonts}/kunstler-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$path-to-fonts}/kunstler-webfont.woff') format('woff'),
-         url('#{$path-to-fonts}/kunstler-webfont.ttf') format('truetype'),
-         url('#{$path-to-fonts}/kunstler-webfont.svg#kunstler_scriptregular') format('svg');
-
+	font-family: 'kunstler_scriptregular';
+	src: url('#{$path-to-fonts}/kunstler-webfont.eot');
+	src: url('#{$path-to-fonts}/kunstler-webfont.eot?#iefix') format('embedded-opentype'),
+	// url('webfont.woff2') format('woff2'),
+	url('#{$path-to-fonts}/kunstler-webfont.woff') format('font-woff'),
+	url('#{$path-to-fonts}/kunstler-webfont.ttf')  format('truetype'),
+	url('#{$path-to-fonts}/kunstler-webfont.svg#kunstler_scriptregular') format('svg');
 }
 
 p,
