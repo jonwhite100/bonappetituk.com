@@ -54,6 +54,12 @@ $c-navbar-border: darken($white, 50%);
 $c-navbar-box-shadow: rgba(122, 120, 122, .99) !default;
 $c-navbar-bg-shrink: rgba(250, 250, 250, 1) !default;
 
+// Nav-pills
+$c-nav-pills-link: gray('900') !default;
+$c-nav-pills-link-bg: $grey-lightest !default;
+$c-nav-pills-link-active: $white !default;
+$c-nav-pills-link-bg-active: $primary !default;
+
 // Paths
 $path-to-uploads: '../../../' !default;
 $path-to-fonts: '../fonts' !default;

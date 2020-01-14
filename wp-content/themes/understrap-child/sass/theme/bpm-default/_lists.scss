@@ -19,8 +19,20 @@
 	}
 }
 
+.list-2-col {
+	@include media-breakpoint-up(md) {
+		column-count: 2;
+	}
+}
+
 .list-3-col {
 	@include media-breakpoint-up(md) {
 		column-count: 3;
+	}
+}
+
+.list-4-col {
+	@include media-breakpoint-up(md) {
+		column-count: 4;
 	}
 }
