@@ -6519,6 +6519,10 @@ a.text-dark:hover, a.text-dark:focus {
 .wrapper#wrapper-sticky {
   border-bottom: 1px solid #dee2e6; }
 
+#wrapper-footer-full,
+#wrapper-static-hero {
+  background-color: #e9ecef; }
+
 .wp-caption {
   font-size: inherit; }
 
@@ -9271,6 +9275,44 @@ a.skip-link {
   bottom: -30px;
   margin-bottom: 0; }
 
+.cinemagraph {
+  position: relative;
+  min-height: 27rem;
+  margin-bottom: 0;
+  background-color: #e9ecef; }
+  .cinemagraph *::-webkit-media-controls-start-playback-button {
+    display: none;
+    -webkit-appearance: none; }
+
+.cinemagraph-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #e9ecef;
+  overflow: hidden;
+  z-index: 4; }
+  .cinemagraph-container:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e9ecef));
+    background: linear-gradient(#fff, #e9ecef);
+    content: '';
+    opacity: .25; }
+
+.cinemagraph-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  max-width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
@@ -9712,10 +9754,22 @@ label {
     text-transform: uppercase; }
 
 @media (min-width: 768px) {
+  .list-2-col {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; } }
+
+@media (min-width: 768px) {
   .list-3-col {
     -webkit-column-count: 3;
        -moz-column-count: 3;
             column-count: 3; } }
+
+@media (min-width: 768px) {
+  .list-4-col {
+    -webkit-column-count: 4;
+       -moz-column-count: 4;
+            column-count: 4; } }
 
 .list-group-about .list-group-item,
 .list-group-blog-site .list-group-item {
@@ -9795,6 +9849,24 @@ label {
 .carousel-multi-item .carousel-item-left .active {
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%); }
+
+.nav-pills .nav-item .nav-link {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  border-radius: 2rem;
+  background-color: #edf5ff;
+  color: #212529;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .nav-pills .nav-item .nav-link.active {
+    background-color: #04678f;
+    color: #fff; }
 
 .no-js #loader {
   display: none; }
@@ -10061,9 +10133,8 @@ p {
 
 @font-face {
   font-family: 'kunstler_scriptregular';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/kunstler-webfont.eot"), url("../fonts/kunstler-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/kunstler-webfont.woff") format("woff"), url("../fonts/kunstler-webfont.ttf") format("truetype"), url("../fonts/kunstler-webfont.svg#kunstler_scriptregular") format("svg"); }
+  src: url("../fonts/kunstler-webfont.eot");
+  src: url("../fonts/kunstler-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/kunstler-webfont.woff") format("font-woff"), url("../fonts/kunstler-webfont.ttf") format("truetype"), url("../fonts/kunstler-webfont.svg#kunstler_scriptregular") format("svg"); }
 
 p,
 li {
